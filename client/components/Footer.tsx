@@ -268,12 +268,12 @@ const Footer = () => {
               >
                 <Twitter className="w-4 h-4" />
               </a>
-              <a 
-                href="https://linkedin.com/company/meinsteuerberater" 
+              <a
+                href="https://linkedin.com/company/meinsteuerberater"
                 className="w-8 h-8 bg-neutral-800 rounded-lg flex items-center justify-center hover:bg-neutral-700 transition-colors"
                 aria-label="LinkedIn"
               >
-                <LinkedIn className="w-4 h-4" />
+                <Linkedin className="w-4 h-4" />
               </a>
               <a 
                 href="https://youtube.com/meinsteuerberater" 
