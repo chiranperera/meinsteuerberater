@@ -172,10 +172,11 @@ export default {
         'card-hover': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
       },
       backgroundImage: {
-        'gradient-primary': 'linear-gradient(135deg, #1B5E9B 0%, #00A4B8 100%)',
-        'gradient-cta': 'linear-gradient(135deg, #5DB745 0%, #4A9837 100%)',
-        'gradient-hero': 'linear-gradient(180deg, rgba(27,94,155,0.05) 0%, rgba(255,255,255,0) 100%)',
-        'gradient-overlay': 'linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 100%)',
+        'gradient-primary': 'linear-gradient(135deg, #10f0e3 0%, #001af8 100%)',
+        'gradient-cta': 'linear-gradient(135deg, #10f0e3 0%, #001af8 100%)',
+        'gradient-hero': 'linear-gradient(180deg, rgba(16,240,227,0.03) 0%, rgba(255,255,255,0) 100%)',
+        'gradient-overlay': 'linear-gradient(180deg, rgba(0,26,248,0.8) 0%, rgba(16,240,227,0.4) 100%)',
+        'gradient-prestige': 'linear-gradient(135deg, #001af8 0%, #10f0e3 50%, #001af8 100%)',
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
