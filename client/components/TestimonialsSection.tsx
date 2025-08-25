@@ -202,28 +202,28 @@ const TestimonialsSection = () => {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-16 pt-16 border-t border-neutral-200">
           <div className="text-center">
             <div className="w-16 h-16 flex items-center justify-center mx-auto mb-4">
-              <Star className="w-8 h-8" style={{background: 'linear-gradient(135deg, #10f0e3 0%, #001af8 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'}} />
+              <Star className="w-8 h-8 icon-gradient" />
             </div>
             <div className="text-2xl font-bold text-neutral-900 mb-2">4.9/5</div>
             <div className="text-sm text-neutral-600">Durchschnittsbewertung</div>
           </div>
           <div className="text-center">
             <div className="w-16 h-16 flex items-center justify-center mx-auto mb-4">
-              <Quote className="w-8 h-8" style={{background: 'linear-gradient(135deg, #10f0e3 0%, #001af8 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'}} />
+              <Quote className="w-8 h-8 icon-gradient" />
             </div>
             <div className="text-2xl font-bold text-neutral-900 mb-2">2.847</div>
             <div className="text-sm text-neutral-600">Kundenbewertungen</div>
           </div>
           <div className="text-center">
             <div className="w-16 h-16 flex items-center justify-center mx-auto mb-4">
-              <span className="font-bold text-xl" style={{background: 'linear-gradient(135deg, #10f0e3 0%, #001af8 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'}}>98%</span>
+              <span className="font-bold text-xl icon-gradient">98%</span>
             </div>
             <div className="text-2xl font-bold text-neutral-900 mb-2">98%</div>
             <div className="text-sm text-neutral-600">Weiterempfehlungsrate</div>
           </div>
           <div className="text-center">
             <div className="w-16 h-16 flex items-center justify-center mx-auto mb-4">
-              <span className="font-bold text-lg" style={{background: 'linear-gradient(135deg, #10f0e3 0%, #001af8 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'}}>TÜV</span>
+              <span className="font-bold text-lg icon-gradient">TÜV</span>
             </div>
             <div className="text-2xl font-bold text-neutral-900 mb-2">TÜV</div>
             <div className="text-sm text-neutral-600">Geprüfte Qualität</div>
