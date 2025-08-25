@@ -66,7 +66,7 @@ const HeroSection = () => {
                       placeholder={t("hero.search_placeholder")}
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
-                      className="w-full pl-12 pr-4 py-4 border border-slate-200 rounded-xl text-base focus:ring-2 focus:ring-brand-blue/10 focus:border-brand-blue transition-all bg-slate-50/50 hover:bg-white hover:border-slate-300"
+                      className="w-full pl-12 pr-4 py-4 border border-slate-200 rounded text-base focus:ring-2 focus:ring-brand-blue/10 focus:border-brand-blue transition-all bg-slate-50/50 hover:bg-white hover:border-slate-300"
                     />
                   </div>
                   <div className="relative">
@@ -76,7 +76,7 @@ const HeroSection = () => {
                       placeholder={t("hero.location_placeholder")}
                       value={location}
                       onChange={(e) => setLocation(e.target.value)}
-                      className="w-full pl-12 pr-4 py-4 border border-slate-200 rounded-xl text-base focus:ring-2 focus:ring-brand-blue/10 focus:border-brand-blue transition-all bg-slate-50/50 hover:bg-white hover:border-slate-300"
+                      className="w-full pl-12 pr-4 py-4 border border-slate-200 rounded text-base focus:ring-2 focus:ring-brand-blue/10 focus:border-brand-blue transition-all bg-slate-50/50 hover:bg-white hover:border-slate-300"
                     />
                   </div>
                 </div>
