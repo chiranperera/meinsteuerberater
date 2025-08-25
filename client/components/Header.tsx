@@ -31,41 +31,41 @@ const Header = () => {
   };
 
   return (
-    <header ref={headerRef} className="sticky top-0 z-50 bg-white shadow-sm">
+    <header ref={headerRef} className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-neutral-100">
       {/* Top Bar for Consultants */}
-      <div className="bg-brand-blue text-white py-2">
+      <div className="bg-gradient-to-r from-neutral-900 to-neutral-800 text-white py-3">
         <div className="container-custom">
           <div className="flex flex-col sm:flex-row justify-between items-center text-sm">
-            <div className="flex items-center gap-4 mb-2 sm:mb-0">
+            <div className="flex items-center gap-6 mb-2 sm:mb-0">
               <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4" />
-                <span>{t('header.phone')}</span>
+                <Phone className="w-4 h-4 text-neutral-300" />
+                <span className="text-neutral-200">{t('header.phone')}</span>
               </div>
               <div className="flex items-center gap-2">
-                <Mail className="w-4 h-4" />
-                <span>{t('header.email')}</span>
+                <Mail className="w-4 h-4 text-neutral-300" />
+                <span className="text-neutral-200">{t('header.email')}</span>
               </div>
             </div>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-6">
               {/* Language Toggle */}
               <div className="relative">
                 <button
                   onClick={() => toggleDropdown('language')}
-                  className="flex items-center gap-1 text-white hover:text-brand-yellow transition-colors"
+                  className="flex items-center gap-1 text-neutral-200 hover:text-white transition-colors"
                 >
                   <Globe className="w-4 h-4" />
-                  <span className="text-sm">{t(`language.${language === 'de' ? 'german' : 'english'}`)}</span>
+                  <span className="text-sm font-medium">{t(`language.${language === 'de' ? 'german' : 'english'}`)}</span>
                   <ChevronDown className="w-3 h-3" />
                 </button>
                 {activeDropdown === 'language' && (
-                  <div className="absolute top-full right-0 mt-2 w-36 bg-white shadow-lg rounded-lg border border-neutral-200 py-2 z-50">
+                  <div className="absolute top-full right-0 mt-2 w-40 bg-white shadow-lg rounded-xl border border-neutral-200 py-2 z-50">
                     <button
                       onClick={() => {
                         setLanguage('de');
                         setActiveDropdown(null);
                       }}
-                      className={`block w-full text-left px-4 py-2 text-sm hover:bg-neutral-50 transition-colors ${
-                        language === 'de' ? 'text-brand-blue font-medium' : 'text-neutral-700'
+                      className={`block w-full text-left px-4 py-3 text-sm hover:bg-neutral-50 transition-colors rounded-lg mx-1 ${
+                        language === 'de' ? 'text-brand-blue font-semibold bg-blue-50' : 'text-neutral-700'
                       }`}
                     >
                       🇩🇪 {t('language.german')}
@@ -75,8 +75,8 @@ const Header = () => {
                         setLanguage('en');
                         setActiveDropdown(null);
                       }}
-                      className={`block w-full text-left px-4 py-2 text-sm hover:bg-neutral-50 transition-colors ${
-                        language === 'en' ? 'text-brand-blue font-medium' : 'text-neutral-700'
+                      className={`block w-full text-left px-4 py-3 text-sm hover:bg-neutral-50 transition-colors rounded-lg mx-1 ${
+                        language === 'en' ? 'text-brand-blue font-semibold bg-blue-50' : 'text-neutral-700'
                       }`}
                     >
                       🇺🇸 {t('language.english')}
@@ -84,10 +84,10 @@ const Header = () => {
                   </div>
                 )}
               </div>
-              <span className="text-sm">{t('header.become_consultant')}</span>
+              <span className="text-sm text-neutral-300">{t('header.become_consultant')}</span>
               <a
                 href="/steuerberater-werden"
-                className="bg-brand-green hover:bg-brand-green-600 px-4 py-1 rounded text-sm font-medium transition-colors"
+                className="bg-brand-green hover:bg-brand-green/90 px-4 py-2 rounded-lg text-sm font-medium transition-all hover:scale-105"
               >
                 {t('header.register_now')}
               </a>
@@ -97,40 +97,40 @@ const Header = () => {
       </div>
 
       {/* Main Navigation */}
-      <nav className="bg-white border-b border-neutral-200">
+      <nav className="bg-white/95 backdrop-blur-md">
         <div className="container-custom">
-          <div className="flex justify-between items-center py-4">
+          <div className="flex justify-between items-center py-6">
             {/* Logo */}
             <div className="flex items-center">
-              <a href="/" className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-gradient-cta rounded-lg flex items-center justify-center">
+              <a href="/" className="flex items-center gap-3 group">
+                <div className="w-12 h-12 bg-gradient-cta rounded-2xl flex items-center justify-center shadow-sm group-hover:shadow-md transition-all">
                   <span className="text-white font-bold text-xl">M</span>
                 </div>
                 <div className="hidden sm:block">
-                  <span className="text-xl font-bold text-brand-blue">MeinSteuerberater</span>
-                  <span className="text-sm text-neutral-600 block">.de</span>
+                  <span className="text-2xl font-bold text-brand-blue tracking-tight">MeinSteuerberater</span>
+                  <span className="text-sm text-neutral-500 block font-medium">.de</span>
                 </div>
               </a>
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-8">
+            <div className="hidden lg:flex items-center space-x-10">
               <div className="relative">
                 <button
                   onClick={() => toggleDropdown('services')}
-                  className="flex items-center gap-1 text-neutral-700 hover:text-brand-blue font-medium transition-colors"
+                  className="flex items-center gap-1 text-neutral-700 hover:text-brand-blue font-medium transition-colors py-2"
                 >
                   {t('header.services')}
                   <ChevronDown className="w-4 h-4" />
                 </button>
                 {activeDropdown === 'services' && (
-                  <div className="absolute top-full left-0 mt-2 w-64 bg-white shadow-2xl rounded-lg border border-neutral-200 py-4 px-6">
-                    <div className="space-y-3">
-                      <a href="/steuerberatung" className="block text-neutral-700 hover:text-brand-blue">{t('services.tax_consulting')}</a>
-                      <a href="/buchhaltung" className="block text-neutral-700 hover:text-brand-blue">{t('services.bookkeeping')}</a>
-                      <a href="/jahresabschluss" className="block text-neutral-700 hover:text-brand-blue">{t('services.annual_statement')}</a>
-                      <a href="/gruendungsberatung" className="block text-neutral-700 hover:text-brand-blue">{t('services.startup_consulting')}</a>
-                      <a href="/unternehmensteuer" className="block text-neutral-700 hover:text-brand-blue">{t('services.corporate_tax')}</a>
+                  <div className="absolute top-full left-0 mt-3 w-72 bg-white shadow-xl rounded-2xl border border-neutral-100 py-6 px-6">
+                    <div className="space-y-4">
+                      <a href="/steuerberatung" className="block text-neutral-700 hover:text-brand-blue font-medium py-2 px-3 rounded-lg hover:bg-neutral-50 transition-all">{t('services.tax_consulting')}</a>
+                      <a href="/buchhaltung" className="block text-neutral-700 hover:text-brand-blue font-medium py-2 px-3 rounded-lg hover:bg-neutral-50 transition-all">{t('services.bookkeeping')}</a>
+                      <a href="/jahresabschluss" className="block text-neutral-700 hover:text-brand-blue font-medium py-2 px-3 rounded-lg hover:bg-neutral-50 transition-all">{t('services.annual_statement')}</a>
+                      <a href="/gruendungsberatung" className="block text-neutral-700 hover:text-brand-blue font-medium py-2 px-3 rounded-lg hover:bg-neutral-50 transition-all">{t('services.startup_consulting')}</a>
+                      <a href="/unternehmensteuer" className="block text-neutral-700 hover:text-brand-blue font-medium py-2 px-3 rounded-lg hover:bg-neutral-50 transition-all">{t('services.corporate_tax')}</a>
                     </div>
                   </div>
                 )}
@@ -139,39 +139,39 @@ const Header = () => {
               <div className="relative">
                 <button
                   onClick={() => toggleDropdown('locations')}
-                  className="flex items-center gap-1 text-neutral-700 hover:text-brand-blue font-medium transition-colors"
+                  className="flex items-center gap-1 text-neutral-700 hover:text-brand-blue font-medium transition-colors py-2"
                 >
                   {t('header.locations')}
                   <ChevronDown className="w-4 h-4" />
                 </button>
                 {activeDropdown === 'locations' && (
-                  <div className="absolute top-full left-0 mt-2 w-56 bg-white shadow-2xl rounded-lg border border-neutral-200 py-4 px-6">
-                    <div className="grid grid-cols-2 gap-3">
-                      <a href="/berlin" className="block text-neutral-700 hover:text-brand-blue">{t('locations.berlin')}</a>
-                      <a href="/muenchen" className="block text-neutral-700 hover:text-brand-blue">{t('locations.munich')}</a>
-                      <a href="/hamburg" className="block text-neutral-700 hover:text-brand-blue">{t('locations.hamburg')}</a>
-                      <a href="/koeln" className="block text-neutral-700 hover:text-brand-blue">{t('locations.cologne')}</a>
-                      <a href="/frankfurt" className="block text-neutral-700 hover:text-brand-blue">{t('locations.frankfurt')}</a>
-                      <a href="/stuttgart" className="block text-neutral-700 hover:text-brand-blue">{t('locations.stuttgart')}</a>
+                  <div className="absolute top-full left-0 mt-3 w-64 bg-white shadow-xl rounded-2xl border border-neutral-100 py-6 px-6">
+                    <div className="grid grid-cols-2 gap-2">
+                      <a href="/berlin" className="block text-neutral-700 hover:text-brand-blue font-medium py-2 px-3 rounded-lg hover:bg-neutral-50 transition-all">{t('locations.berlin')}</a>
+                      <a href="/muenchen" className="block text-neutral-700 hover:text-brand-blue font-medium py-2 px-3 rounded-lg hover:bg-neutral-50 transition-all">{t('locations.munich')}</a>
+                      <a href="/hamburg" className="block text-neutral-700 hover:text-brand-blue font-medium py-2 px-3 rounded-lg hover:bg-neutral-50 transition-all">{t('locations.hamburg')}</a>
+                      <a href="/koeln" className="block text-neutral-700 hover:text-brand-blue font-medium py-2 px-3 rounded-lg hover:bg-neutral-50 transition-all">{t('locations.cologne')}</a>
+                      <a href="/frankfurt" className="block text-neutral-700 hover:text-brand-blue font-medium py-2 px-3 rounded-lg hover:bg-neutral-50 transition-all">{t('locations.frankfurt')}</a>
+                      <a href="/stuttgart" className="block text-neutral-700 hover:text-brand-blue font-medium py-2 px-3 rounded-lg hover:bg-neutral-50 transition-all">{t('locations.stuttgart')}</a>
                     </div>
                   </div>
                 )}
               </div>
 
-              <a href="/preise" className="text-neutral-700 hover:text-brand-blue font-medium transition-colors">
+              <a href="/preise" className="text-neutral-700 hover:text-brand-blue font-medium transition-colors py-2">
                 {t('header.prices')}
               </a>
-              <a href="/blog" className="text-neutral-700 hover:text-brand-blue font-medium transition-colors">
+              <a href="/blog" className="text-neutral-700 hover:text-brand-blue font-medium transition-colors py-2">
                 {t('header.guide')}
               </a>
-              <a href="/kontakt" className="text-neutral-700 hover:text-brand-blue font-medium transition-colors">
+              <a href="/kontakt" className="text-neutral-700 hover:text-brand-blue font-medium transition-colors py-2">
                 {t('header.contact')}
               </a>
             </div>
 
             {/* CTA Button */}
             <div className="hidden lg:block">
-              <a href="/steuerberater-finden" className="btn-primary">
+              <a href="/steuerberater-finden" className="bg-gradient-cta text-white px-6 py-3 rounded-2xl font-medium transition-all hover:shadow-md hover:scale-105">
                 {t('header.find_consultant')}
               </a>
             </div>
