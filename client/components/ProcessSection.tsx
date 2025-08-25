@@ -10,21 +10,21 @@ const ProcessSection = () => {
       icon: Search,
       title: t('process.step1_title'),
       description: t('process.step1_desc'),
-      features: ["Kostenlos & unverbindlich", "Nur wenige Minuten", "Präzise Filterung"]
+      features: [t('process.step1_feature1'), t('process.step1_feature2'), t('process.step1_feature3')]
     },
     {
       number: 2,
       icon: Users,
       title: t('process.step2_title'),
       description: t('process.step2_desc'),
-      features: ["Bis zu 5 Angebote", "Transparente Preise", "Echte Bewertungen"]
+      features: [t('process.step2_feature1'), t('process.step2_feature2'), t('process.step2_feature3')]
     },
     {
       number: 3,
       icon: Handshake,
       title: t('process.step3_title'),
       description: t('process.step3_desc'),
-      features: ["Freie Auswahl", "Direkter Kontakt", "Sofortiger Start"]
+      features: [t('process.step3_feature1'), t('process.step3_feature2'), t('process.step3_feature3')]
     }
   ];
 
