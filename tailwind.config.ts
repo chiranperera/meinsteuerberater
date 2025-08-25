@@ -17,45 +17,35 @@ export default {
     },
     extend: {
       colors: {
-        // MeinSteuerberater Brand Colors - Professional & Muted
+        // MeinSteuerberater Brand Colors - Modern & Prestigious
         "brand-blue": {
-          DEFAULT: "#2563EB", // More professional blue
-          50: "#F8FAFF",
-          100: "#EFF6FF",
-          200: "#DBEAFE",
-          300: "#BFDBFE",
-          400: "#93C5FD",
-          500: "#2563EB",
-          600: "#1D4ED8",
-          700: "#1E40AF",
-          800: "#1E3A8A",
-          900: "#1E3A8A",
-        },
-        "brand-green": {
-          DEFAULT: "#059669", // More muted, professional green
-          50: "#F0FDF9",
-          100: "#DCFCE7",
-          200: "#BBF7D0",
-          300: "#86EFAC",
-          400: "#4ADE80",
-          500: "#059669",
-          600: "#047857",
-          700: "#065F46",
-          800: "#064E3B",
-          900: "#022C22",
-        },
-        "brand-teal": {
-          DEFAULT: "#0891B2", // More muted teal
+          DEFAULT: "#001af8", // Modern prestigious blue
           50: "#F0F9FF",
           100: "#E0F2FE",
           200: "#BAE6FD",
           300: "#7DD3FC",
           400: "#38BDF8",
-          500: "#0891B2",
-          600: "#0E7490",
-          700: "#155E75",
-          800: "#164E63",
-          900: "#083344",
+          500: "#001af8",
+          600: "#0014d1",
+          700: "#0010aa",
+          800: "#000d83",
+          900: "#000a5c",
+        },
+        "brand-cyan": {
+          DEFAULT: "#10f0e3", // Modern cyan for gradient
+          50: "#F0FDFA",
+          100: "#CCFBF1",
+          200: "#99F6E4",
+          300: "#5EEAD4",
+          400: "#2DD4BF",
+          500: "#10f0e3",
+          600: "#0D9488",
+          700: "#0F766E",
+          800: "#115E59",
+          900: "#134E4A",
+        },
+        "brand-gradient": {
+          DEFAULT: "linear-gradient(135deg, #10f0e3 0%, #001af8 100%)",
         },
         "brand-orange": {
           DEFAULT: "#EA580C", // More muted orange
@@ -120,7 +110,7 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#2563EB", // Updated to match new brand blue
+          DEFAULT: "#001af8", // Updated to match new brand blue
           foreground: "#FFFFFF",
         },
         secondary: {
@@ -136,8 +126,8 @@ export default {
           foreground: "#64748B",
         },
         accent: {
-          DEFAULT: "#059669", // Updated to match new brand green
-          foreground: "#FFFFFF",
+          DEFAULT: "#10f0e3", // Updated to match new brand cyan
+          foreground: "#001af8",
         },
         popover: {
           DEFAULT: "#FFFFFF",
