@@ -36,7 +36,7 @@ const Header = () => {
   return (
     <header
       ref={headerRef}
-      className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-neutral-100"
+      className="sticky top-0 z-50 bg-white/98 backdrop-blur-md border-b border-slate-200/60 shadow-sm"
     >
       {/* Top Bar for Consultants */}
       <div className="bg-slate-50 border-b border-slate-200 text-slate-700 py-3">
@@ -111,20 +111,20 @@ const Header = () => {
       </div>
 
       {/* Main Navigation */}
-      <nav className="bg-white/95 backdrop-blur-md">
+      <nav className="bg-white/98 backdrop-blur-md">
         <div className="container-custom">
           <div className="flex justify-between items-center py-6">
             {/* Logo */}
             <div className="flex items-center">
               <a href="/" className="flex items-center gap-3 group">
-                <div className="w-12 h-12 bg-gradient-cta rounded-2xl flex items-center justify-center shadow-sm group-hover:shadow-md transition-all">
+                <div className="w-12 h-12 bg-gradient-cta rounded-xl flex items-center justify-center shadow-sm group-hover:shadow-md transition-all">
                   <span className="text-white font-bold text-xl">M</span>
                 </div>
                 <div className="hidden sm:block">
                   <span className="text-2xl font-bold text-brand-blue tracking-tight">
                     MeinSteuerberater
                   </span>
-                  <span className="text-sm text-neutral-500 block font-medium">
+                  <span className="text-sm text-slate-500 block font-medium">
                     .de
                   </span>
                 </div>
@@ -136,7 +136,7 @@ const Header = () => {
               <div className="relative">
                 <button
                   onClick={() => toggleDropdown("services")}
-                  className="flex items-center gap-1 text-neutral-700 hover:text-brand-blue font-medium transition-colors py-2"
+                  className="flex items-center gap-1 text-slate-700 hover:text-brand-blue font-medium transition-colors py-2"
                 >
                   {t("header.services")}
                   <ChevronDown className="w-4 h-4" />
@@ -182,7 +182,7 @@ const Header = () => {
               <div className="relative">
                 <button
                   onClick={() => toggleDropdown("locations")}
-                  className="flex items-center gap-1 text-neutral-700 hover:text-brand-blue font-medium transition-colors py-2"
+                  className="flex items-center gap-1 text-slate-700 hover:text-brand-blue font-medium transition-colors py-2"
                 >
                   {t("header.locations")}
                   <ChevronDown className="w-4 h-4" />
