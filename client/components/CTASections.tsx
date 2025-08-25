@@ -204,8 +204,8 @@ export const StatisticsSection = () => {
             const IconComponent = stat.icon;
             return (
               <div key={index} className="text-center">
-                <div className="w-20 h-20 bg-gradient-cta rounded-3xl flex items-center justify-center mx-auto mb-4">
-                  <IconComponent className="w-10 h-10 text-white" />
+                <div className="w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                  <IconComponent className="w-10 h-10" style={{background: 'linear-gradient(135deg, #10f0e3 0%, #001af8 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'}} />
                 </div>
                 <div className="text-4xl font-bold text-neutral-900 mb-2">{stat.number}</div>
                 <div className="text-neutral-600">{stat.label}</div>
@@ -315,9 +315,9 @@ export const WhyChooseUsSection = () => {
           {benefits.map((benefit, index) => {
             const IconComponent = benefit.icon;
             return (
-              <div key={index} className="text-center group">
-                <div className="w-16 h-16 bg-brand-green bg-opacity-10 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-brand-green group-hover:text-white transition-all">
-                  <IconComponent className="w-8 h-8 text-brand-green group-hover:text-white" />
+              <div key={index} className="text-center">
+                <div className="w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <IconComponent className="w-8 h-8" style={{background: 'linear-gradient(135deg, #10f0e3 0%, #001af8 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'}} />
                 </div>
                 <h3 className="text-xl font-semibold text-neutral-900 mb-3">{benefit.title}</h3>
                 <p className="text-neutral-600 leading-relaxed">{benefit.description}</p>
