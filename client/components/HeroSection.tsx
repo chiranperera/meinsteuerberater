@@ -132,11 +132,11 @@ const HeroSection = () => {
             <div className="flex flex-wrap items-center gap-8 pt-4">
               <div className="flex items-center gap-2 text-neutral-600">
                 <Users className="w-5 h-5 text-brand-blue" />
-                <span className="text-sm font-medium">Über 10.000 erfolgreiche Vermittlungen</span>
+                <span className="text-sm font-medium">{t('hero.trust_placements')}</span>
               </div>
               <div className="flex items-center gap-2 text-neutral-600">
                 <Shield className="w-5 h-5 text-brand-blue" />
-                <span className="text-sm font-medium">TÜV geprüfte Qualität</span>
+                <span className="text-sm font-medium">{t('hero.trust_quality')}</span>
               </div>
             </div>
           </div>
