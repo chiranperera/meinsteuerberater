@@ -1,16 +1,24 @@
-import { useState } from 'react';
-import { Search, MapPin, Check, Star, Users, Shield, Clock } from 'lucide-react';
-import { useLanguage } from '../contexts/LanguageContext';
+import { useState } from "react";
+import {
+  Search,
+  MapPin,
+  Check,
+  Star,
+  Users,
+  Shield,
+  Clock,
+} from "lucide-react";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const HeroSection = () => {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [location, setLocation] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
+  const [location, setLocation] = useState("");
   const { t } = useLanguage();
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle search logic here
-    console.log('Search:', { searchQuery, location });
+    console.log("Search:", { searchQuery, location });
   };
 
   return (
@@ -23,22 +31,27 @@ const HeroSection = () => {
             <div className="inline-flex items-center gap-3 bg-neutral-50 px-4 py-2 rounded-full border border-neutral-200">
               <div className="flex items-center gap-1">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-brand-yellow text-brand-yellow" />
+                  <Star
+                    key={i}
+                    className="w-4 h-4 fill-brand-yellow text-brand-yellow"
+                  />
                 ))}
               </div>
               <span className="text-neutral-700 text-sm font-medium">
-                4.9/5 • <strong>2,847 {t('hero.reviews')}</strong>
+                4.9/5 • <strong>2,847 {t("hero.reviews")}</strong>
               </span>
             </div>
 
             {/* Main Headline */}
             <div className="space-y-6">
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-extrabold text-neutral-900 leading-[1.1] tracking-tight">
-                {t('hero.title')}{' '}
-                <span className="text-brand-blue">{t('hero.title_highlight')}</span>
+                {t("hero.title")}{" "}
+                <span className="text-brand-blue">
+                  {t("hero.title_highlight")}
+                </span>
               </h1>
               <p className="text-xl lg:text-2xl text-neutral-600 leading-relaxed font-light max-w-2xl">
-                {t('hero.subtitle')}
+                {t("hero.subtitle")}
               </p>
             </div>
 
@@ -50,7 +63,7 @@ const HeroSection = () => {
                     <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-neutral-400 w-5 h-5" />
                     <input
                       type="text"
-                      placeholder={t('hero.search_placeholder')}
+                      placeholder={t("hero.search_placeholder")}
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
                       className="w-full pl-12 pr-4 py-4 border border-neutral-200 rounded-2xl text-base focus:ring-2 focus:ring-brand-blue/20 focus:border-brand-blue transition-all bg-neutral-50/50 hover:bg-white hover:border-neutral-300"
@@ -60,7 +73,7 @@ const HeroSection = () => {
                     <MapPin className="absolute left-4 top-1/2 transform -translate-y-1/2 text-neutral-400 w-5 h-5" />
                     <input
                       type="text"
-                      placeholder={t('hero.location_placeholder')}
+                      placeholder={t("hero.location_placeholder")}
                       value={location}
                       onChange={(e) => setLocation(e.target.value)}
                       className="w-full pl-12 pr-4 py-4 border border-neutral-200 rounded-2xl text-base focus:ring-2 focus:ring-brand-blue/20 focus:border-brand-blue transition-all bg-neutral-50/50 hover:bg-white hover:border-neutral-300"
@@ -71,19 +84,33 @@ const HeroSection = () => {
                   type="submit"
                   className="w-full bg-gradient-cta text-white font-medium py-4 px-8 rounded-2xl hover:shadow-md hover:scale-[1.02] transform transition-all duration-200 text-lg"
                 >
-                  {t('hero.search_button')}
+                  {t("hero.search_button")}
                 </button>
               </form>
 
               {/* Popular Searches */}
               <div className="mt-6 pt-6 border-t border-neutral-100">
-                <p className="text-sm text-neutral-500 mb-3 font-medium">{t('hero.popular_searches')}</p>
+                <p className="text-sm text-neutral-500 mb-3 font-medium">
+                  {t("hero.popular_searches")}
+                </p>
                 <div className="flex flex-wrap gap-2">
                   {[
-                    { key: 'hero.search_tax_return', value: t('hero.search_tax_return') },
-                    { key: 'hero.search_bookkeeping', value: t('hero.search_bookkeeping') },
-                    { key: 'hero.search_startup', value: t('hero.search_startup') },
-                    { key: 'hero.search_annual', value: t('hero.search_annual') }
+                    {
+                      key: "hero.search_tax_return",
+                      value: t("hero.search_tax_return"),
+                    },
+                    {
+                      key: "hero.search_bookkeeping",
+                      value: t("hero.search_bookkeeping"),
+                    },
+                    {
+                      key: "hero.search_startup",
+                      value: t("hero.search_startup"),
+                    },
+                    {
+                      key: "hero.search_annual",
+                      value: t("hero.search_annual"),
+                    },
                   ].map((term) => (
                     <button
                       key={term.key}
@@ -104,8 +131,12 @@ const HeroSection = () => {
                   <Check className="w-5 h-5 text-brand-green" />
                 </div>
                 <div>
-                  <p className="font-semibold text-neutral-900 mb-1">{t('hero.usp_free')}</p>
-                  <p className="text-sm text-neutral-600 leading-relaxed">{t('hero.usp_free_desc')}</p>
+                  <p className="font-semibold text-neutral-900 mb-1">
+                    {t("hero.usp_free")}
+                  </p>
+                  <p className="text-sm text-neutral-600 leading-relaxed">
+                    {t("hero.usp_free_desc")}
+                  </p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -113,8 +144,12 @@ const HeroSection = () => {
                   <Clock className="w-5 h-5 text-brand-green" />
                 </div>
                 <div>
-                  <p className="font-semibold text-neutral-900 mb-1">{t('hero.usp_fast')}</p>
-                  <p className="text-sm text-neutral-600 leading-relaxed">{t('hero.usp_fast_desc')}</p>
+                  <p className="font-semibold text-neutral-900 mb-1">
+                    {t("hero.usp_fast")}
+                  </p>
+                  <p className="text-sm text-neutral-600 leading-relaxed">
+                    {t("hero.usp_fast_desc")}
+                  </p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -122,8 +157,12 @@ const HeroSection = () => {
                   <Shield className="w-5 h-5 text-brand-green" />
                 </div>
                 <div>
-                  <p className="font-semibold text-neutral-900 mb-1">{t('hero.usp_verified')}</p>
-                  <p className="text-sm text-neutral-600 leading-relaxed">{t('hero.usp_verified_desc')}</p>
+                  <p className="font-semibold text-neutral-900 mb-1">
+                    {t("hero.usp_verified")}
+                  </p>
+                  <p className="text-sm text-neutral-600 leading-relaxed">
+                    {t("hero.usp_verified_desc")}
+                  </p>
                 </div>
               </div>
             </div>
@@ -134,13 +173,17 @@ const HeroSection = () => {
                 <div className="w-8 h-8 bg-brand-blue/10 rounded-full flex items-center justify-center">
                   <Users className="w-4 h-4 text-brand-blue" />
                 </div>
-                <span className="text-sm font-medium">{t('hero.trust_placements')}</span>
+                <span className="text-sm font-medium">
+                  {t("hero.trust_placements")}
+                </span>
               </div>
               <div className="flex items-center gap-3 text-neutral-600">
                 <div className="w-8 h-8 bg-brand-blue/10 rounded-full flex items-center justify-center">
                   <Shield className="w-4 h-4 text-brand-blue" />
                 </div>
-                <span className="text-sm font-medium">{t('hero.trust_quality')}</span>
+                <span className="text-sm font-medium">
+                  {t("hero.trust_quality")}
+                </span>
               </div>
             </div>
           </div>
@@ -154,10 +197,9 @@ const HeroSection = () => {
                 <div
                   className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                   style={{
-                    backgroundImage: `linear-gradient(135deg, rgba(27, 94, 155, 0.75) 0%, rgba(93, 183, 69, 0.65) 100%), url('https://images.pexels.com/photos/7821546/pexels-photo-7821546.jpeg?auto=compress&cs=tinysrgb&w=1200')`
+                    backgroundImage: `linear-gradient(135deg, rgba(27, 94, 155, 0.75) 0%, rgba(93, 183, 69, 0.65) 100%), url('https://images.pexels.com/photos/7821546/pexels-photo-7821546.jpeg?auto=compress&cs=tinysrgb&w=1200')`,
                   }}
                 />
-
               </div>
 
               {/* Floating Cards */}
@@ -167,8 +209,12 @@ const HeroSection = () => {
                     <Check className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-neutral-900">{t('hero.customer_satisfaction')}</p>
-                    <p className="text-xs text-neutral-600 font-medium">{t('hero.verified_reviews')}</p>
+                    <p className="text-sm font-semibold text-neutral-900">
+                      {t("hero.customer_satisfaction")}
+                    </p>
+                    <p className="text-xs text-neutral-600 font-medium">
+                      {t("hero.verified_reviews")}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -179,8 +225,12 @@ const HeroSection = () => {
                     <Clock className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-neutral-900">{t('hero.avg_response')}</p>
-                    <p className="text-xs text-neutral-600 font-medium">{t('hero.response_time')}</p>
+                    <p className="text-sm font-semibold text-neutral-900">
+                      {t("hero.avg_response")}
+                    </p>
+                    <p className="text-xs text-neutral-600 font-medium">
+                      {t("hero.response_time")}
+                    </p>
                   </div>
                 </div>
               </div>
