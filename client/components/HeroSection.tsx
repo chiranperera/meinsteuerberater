@@ -177,8 +177,8 @@ const HeroSection = () => {
                     <Check className="w-4 h-4 text-white" />
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-neutral-900">98% Kundenzufriedenheit</p>
-                    <p className="text-xs text-neutral-600">Verifizierte Bewertungen</p>
+                    <p className="text-sm font-semibold text-neutral-900">{t('hero.customer_satisfaction')}</p>
+                    <p className="text-xs text-neutral-600">{t('hero.verified_reviews')}</p>
                   </div>
                 </div>
               </div>
@@ -189,8 +189,8 @@ const HeroSection = () => {
                     <Clock className="w-4 h-4 text-white" />
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-neutral-900">Ø 2,3 Stunden</p>
-                    <p className="text-xs text-neutral-600">Antwortzeit</p>
+                    <p className="text-sm font-semibold text-neutral-900">{t('hero.avg_response')}</p>
+                    <p className="text-xs text-neutral-600">{t('hero.response_time')}</p>
                   </div>
                 </div>
               </div>
