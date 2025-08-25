@@ -128,7 +128,7 @@ const HeroSection = () => {
             <div className="grid sm:grid-cols-3 gap-8">
               <div className="flex items-center gap-4">
                 <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center">
-                  <Check className="w-6 h-6" style={{background: 'linear-gradient(135deg, #10f0e3 0%, #001af8 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'}} />
+                  <Check className="w-6 h-6 icon-gradient" />
                 </div>
                 <div>
                   <p className="font-semibold text-slate-900">
@@ -138,7 +138,7 @@ const HeroSection = () => {
               </div>
               <div className="flex items-center gap-4">
                 <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center">
-                  <Clock className="w-6 h-6" style={{background: 'linear-gradient(135deg, #10f0e3 0%, #001af8 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'}} />
+                  <Clock className="w-6 h-6 icon-gradient" />
                 </div>
                 <div>
                   <p className="font-semibold text-slate-900">
@@ -148,7 +148,7 @@ const HeroSection = () => {
               </div>
               <div className="flex items-center gap-4">
                 <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center">
-                  <Shield className="w-6 h-6" style={{background: 'linear-gradient(135deg, #10f0e3 0%, #001af8 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'}} />
+                  <Shield className="w-6 h-6 icon-gradient" />
                 </div>
                 <div>
                   <p className="font-semibold text-slate-900">
