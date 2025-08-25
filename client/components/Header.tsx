@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Menu, X, Phone, Mail, MapPin, ChevronDown, Globe } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
