@@ -126,42 +126,33 @@ const HeroSection = () => {
 
             {/* USP Points */}
             <div className="grid sm:grid-cols-3 gap-8">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-brand-green/10 to-brand-green/20 rounded-2xl flex items-center justify-center border border-brand-green/20">
-                  <Check className="w-5 h-5 text-brand-green" />
+              <div className="flex items-center gap-4">
+                <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center">
+                  <Check className="w-6 h-6" style={{background: 'linear-gradient(135deg, #10f0e3 0%, #001af8 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'}} />
                 </div>
                 <div>
-                  <p className="font-semibold text-slate-900 mb-1">
-                    {t("hero.usp_free")}
-                  </p>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    {t("hero.usp_free_desc")}
+                  <p className="font-semibold text-slate-900">
+                    100% Kostenlos
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-brand-green/10 to-brand-green/20 rounded-2xl flex items-center justify-center border border-brand-green/20">
-                  <Clock className="w-5 h-5 text-brand-green" />
+              <div className="flex items-center gap-4">
+                <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center">
+                  <Clock className="w-6 h-6" style={{background: 'linear-gradient(135deg, #10f0e3 0%, #001af8 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'}} />
                 </div>
                 <div>
-                  <p className="font-semibold text-slate-900 mb-1">
-                    {t("hero.usp_fast")}
-                  </p>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    {t("hero.usp_fast_desc")}
+                  <p className="font-semibold text-slate-900">
+                    Schnelle Vermittlung
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-brand-green/10 to-brand-green/20 rounded-2xl flex items-center justify-center border border-brand-green/20">
-                  <Shield className="w-5 h-5 text-brand-green" />
+              <div className="flex items-center gap-4">
+                <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center">
+                  <Shield className="w-6 h-6" style={{background: 'linear-gradient(135deg, #10f0e3 0%, #001af8 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'}} />
                 </div>
                 <div>
-                  <p className="font-semibold text-slate-900 mb-1">
-                    {t("hero.usp_verified")}
-                  </p>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    {t("hero.usp_verified_desc")}
+                  <p className="font-semibold text-slate-900">
+                    Geprüfte Experten
                   </p>
                 </div>
               </div>
