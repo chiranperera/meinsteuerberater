@@ -145,7 +145,7 @@ const HeroSection = () => {
           <div className="relative lg:pl-8">
             <div className="relative">
               {/* Professional Business Image */}
-              <div className="min-h-[600px] lg:min-h-[650px] bg-gradient-to-br from-brand-blue/10 to-brand-green/10 rounded-2xl border border-neutral-200 overflow-hidden relative">
+              <div className="min-h-[500px] md:min-h-[600px] lg:min-h-[650px] bg-gradient-to-br from-brand-blue/10 to-brand-green/10 rounded-2xl border border-neutral-200 overflow-hidden relative">
                 {/* Background Image */}
                 <div
                   className="absolute inset-0 bg-cover bg-center bg-no-repeat"
