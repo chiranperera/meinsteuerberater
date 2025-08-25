@@ -50,7 +50,7 @@ const HeroSection = () => {
                     <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-neutral-400 w-5 h-5" />
                     <input
                       type="text"
-                      placeholder="Welche Leistung benötigen Sie?"
+                      placeholder={t('hero.search_placeholder')}
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
                       className="w-full pl-12 pr-4 py-4 border border-neutral-300 rounded-lg text-base focus:ring-2 focus:ring-brand-blue focus:border-brand-blue transition-colors"
@@ -60,7 +60,7 @@ const HeroSection = () => {
                     <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 text-neutral-400 w-5 h-5" />
                     <input
                       type="text"
-                      placeholder="PLZ oder Ort eingeben"
+                      placeholder={t('hero.location_placeholder')}
                       value={location}
                       onChange={(e) => setLocation(e.target.value)}
                       className="w-full pl-12 pr-4 py-4 border border-neutral-300 rounded-lg text-base focus:ring-2 focus:ring-brand-blue focus:border-brand-blue transition-colors"
@@ -71,21 +71,26 @@ const HeroSection = () => {
                   type="submit"
                   className="w-full bg-gradient-cta text-white font-semibold py-4 px-8 rounded-lg hover:shadow-lg hover:scale-105 transform transition-all duration-200 text-lg"
                 >
-                  Jetzt Steuerberater finden
+                  {t('hero.search_button')}
                 </button>
               </form>
-              
+
               {/* Popular Searches */}
               <div className="mt-4 pt-4 border-t border-neutral-200">
-                <p className="text-sm text-neutral-500 mb-2">Beliebte Suchen:</p>
+                <p className="text-sm text-neutral-500 mb-2">{t('hero.popular_searches')}</p>
                 <div className="flex flex-wrap gap-2">
-                  {['Steuererklärung', 'Buchhaltung', 'Gründungsberatung', 'Jahresabschluss'].map((term) => (
+                  {[
+                    { key: 'hero.search_tax_return', value: t('hero.search_tax_return') },
+                    { key: 'hero.search_bookkeeping', value: t('hero.search_bookkeeping') },
+                    { key: 'hero.search_startup', value: t('hero.search_startup') },
+                    { key: 'hero.search_annual', value: t('hero.search_annual') }
+                  ].map((term) => (
                     <button
-                      key={term}
+                      key={term.key}
                       className="px-3 py-1 bg-neutral-100 text-neutral-700 rounded-full text-sm hover:bg-neutral-200 transition-colors"
-                      onClick={() => setSearchQuery(term)}
+                      onClick={() => setSearchQuery(term.value)}
                     >
-                      {term}
+                      {term.value}
                     </button>
                   ))}
                 </div>
