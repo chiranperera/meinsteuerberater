@@ -181,16 +181,16 @@ const Header = () => {
                     onClick={() => toggleDropdown('mobile-services')}
                     className="flex items-center justify-between w-full text-left text-neutral-700 font-medium py-2"
                   >
-                    Leistungen
+                    {t('header.services')}
                     <ChevronDown className="w-4 h-4" />
                   </button>
                   {activeDropdown === 'mobile-services' && (
                     <div className="pl-4 mt-2 space-y-2">
-                      <a href="/steuerberatung" className="block text-neutral-600 py-1">Steuerberatung</a>
-                      <a href="/buchhaltung" className="block text-neutral-600 py-1">Buchhaltung</a>
-                      <a href="/jahresabschluss" className="block text-neutral-600 py-1">Jahresabschluss</a>
-                      <a href="/gruendungsberatung" className="block text-neutral-600 py-1">Gründungsberatung</a>
-                      <a href="/unternehmensteuer" className="block text-neutral-600 py-1">Unternehmensteuer</a>
+                      <a href="/steuerberatung" className="block text-neutral-600 py-1">{t('services.tax_consulting')}</a>
+                      <a href="/buchhaltung" className="block text-neutral-600 py-1">{t('services.bookkeeping')}</a>
+                      <a href="/jahresabschluss" className="block text-neutral-600 py-1">{t('services.annual_statement')}</a>
+                      <a href="/gruendungsberatung" className="block text-neutral-600 py-1">{t('services.startup_consulting')}</a>
+                      <a href="/unternehmensteuer" className="block text-neutral-600 py-1">{t('services.corporate_tax')}</a>
                     </div>
                   )}
                 </div>
@@ -200,28 +200,28 @@ const Header = () => {
                     onClick={() => toggleDropdown('mobile-locations')}
                     className="flex items-center justify-between w-full text-left text-neutral-700 font-medium py-2"
                   >
-                    Standorte
+                    {t('header.locations')}
                     <ChevronDown className="w-4 h-4" />
                   </button>
                   {activeDropdown === 'mobile-locations' && (
                     <div className="pl-4 mt-2 grid grid-cols-2 gap-2">
-                      <a href="/berlin" className="block text-neutral-600 py-1">Berlin</a>
-                      <a href="/muenchen" className="block text-neutral-600 py-1">München</a>
-                      <a href="/hamburg" className="block text-neutral-600 py-1">Hamburg</a>
-                      <a href="/koeln" className="block text-neutral-600 py-1">Köln</a>
-                      <a href="/frankfurt" className="block text-neutral-600 py-1">Frankfurt</a>
-                      <a href="/stuttgart" className="block text-neutral-600 py-1">Stuttgart</a>
+                      <a href="/berlin" className="block text-neutral-600 py-1">{t('locations.berlin')}</a>
+                      <a href="/muenchen" className="block text-neutral-600 py-1">{t('locations.munich')}</a>
+                      <a href="/hamburg" className="block text-neutral-600 py-1">{t('locations.hamburg')}</a>
+                      <a href="/koeln" className="block text-neutral-600 py-1">{t('locations.cologne')}</a>
+                      <a href="/frankfurt" className="block text-neutral-600 py-1">{t('locations.frankfurt')}</a>
+                      <a href="/stuttgart" className="block text-neutral-600 py-1">{t('locations.stuttgart')}</a>
                     </div>
                   )}
                 </div>
 
-                <a href="/preise" className="block text-neutral-700 font-medium py-2">Preise</a>
-                <a href="/blog" className="block text-neutral-700 font-medium py-2">Ratgeber</a>
-                <a href="/kontakt" className="block text-neutral-700 font-medium py-2">Kontakt</a>
-                
+                <a href="/preise" className="block text-neutral-700 font-medium py-2">{t('header.prices')}</a>
+                <a href="/blog" className="block text-neutral-700 font-medium py-2">{t('header.guide')}</a>
+                <a href="/kontakt" className="block text-neutral-700 font-medium py-2">{t('header.contact')}</a>
+
                 <div className="pt-4 border-t border-neutral-200">
                   <a href="/steuerberater-finden" className="btn-primary w-full justify-center">
-                    Steuerberater finden
+                    {t('header.find_consultant')}
                   </a>
                 </div>
               </div>
