@@ -45,11 +45,15 @@ const Header = () => {
             <div className="flex items-center gap-6 mb-2 sm:mb-0">
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-slate-500" />
-                <span className="text-slate-600 text-sm">{t("header.phone")}</span>
+                <span className="text-slate-600 text-sm">
+                  {t("header.phone")}
+                </span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-slate-500" />
-                <span className="text-slate-600 text-sm">{t("header.email")}</span>
+                <span className="text-slate-600 text-sm">
+                  {t("header.email")}
+                </span>
               </div>
             </div>
             <div className="flex items-center gap-6">
@@ -245,10 +249,7 @@ const Header = () => {
 
             {/* CTA Button */}
             <div className="hidden lg:block">
-              <a
-                href="/steuerberater-finden"
-                className="btn-primary"
-              >
+              <a href="/steuerberater-finden" className="btn-primary">
                 {t("header.find_consultant")}
               </a>
             </div>

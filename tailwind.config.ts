@@ -147,7 +147,14 @@ export default {
         "3xl": "1.5rem",
       },
       fontFamily: {
-        sans: ["DM Sans", "Inter", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"],
+        sans: [
+          "DM Sans",
+          "Inter",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "sans-serif",
+        ],
         mono: ["Roboto Mono", "Courier New", "monospace"],
       },
       fontSize: {
@@ -163,20 +170,24 @@ export default {
         "6xl": ["3.75rem", { lineHeight: "1" }],
       },
       spacing: {
-        '18': '4.5rem',
-        '88': '22rem',
+        "18": "4.5rem",
+        "88": "22rem",
       },
       boxShadow: {
-        'focus': '0 0 0 3px rgba(91, 183, 69, 0.3)',
-        'card': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
-        'card-hover': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+        focus: "0 0 0 3px rgba(91, 183, 69, 0.3)",
+        card: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+        "card-hover":
+          "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
       },
       backgroundImage: {
-        'gradient-primary': 'linear-gradient(135deg, #10f0e3 0%, #001af8 100%)',
-        'gradient-cta': 'linear-gradient(135deg, #10f0e3 0%, #001af8 100%)',
-        'gradient-hero': 'linear-gradient(180deg, rgba(16,240,227,0.03) 0%, rgba(255,255,255,0) 100%)',
-        'gradient-overlay': 'linear-gradient(180deg, rgba(0,26,248,0.8) 0%, rgba(16,240,227,0.4) 100%)',
-        'gradient-prestige': 'linear-gradient(135deg, #001af8 0%, #10f0e3 50%, #001af8 100%)',
+        "gradient-primary": "linear-gradient(135deg, #10f0e3 0%, #001af8 100%)",
+        "gradient-cta": "linear-gradient(135deg, #10f0e3 0%, #001af8 100%)",
+        "gradient-hero":
+          "linear-gradient(180deg, rgba(16,240,227,0.03) 0%, rgba(255,255,255,0) 100%)",
+        "gradient-overlay":
+          "linear-gradient(180deg, rgba(0,26,248,0.8) 0%, rgba(16,240,227,0.4) 100%)",
+        "gradient-prestige":
+          "linear-gradient(135deg, #001af8 0%, #10f0e3 50%, #001af8 100%)",
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -221,7 +232,7 @@ export default {
         },
       },
       transitionTimingFunction: {
-        'bounce': 'cubic-bezier(0.68, -0.55, 0.265, 1.55)',
+        bounce: "cubic-bezier(0.68, -0.55, 0.265, 1.55)",
       },
     },
   },

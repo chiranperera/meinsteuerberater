@@ -1,4 +1,15 @@
-import { ArrowRight, Phone, Mail, Check, Star, Shield, Clock, Users, Award, Zap } from 'lucide-react';
+import {
+  ArrowRight,
+  Phone,
+  Mail,
+  Check,
+  Star,
+  Shield,
+  Clock,
+  Users,
+  Award,
+  Zap,
+} from "lucide-react";
 
 // Main CTA Section for homepage
 export const MainCTASection = () => {
@@ -9,12 +20,13 @@ export const MainCTASection = () => {
           Bereit für professionelle Steuerberatung?
         </h2>
         <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-          Starten Sie jetzt und finden Sie in wenigen Minuten den perfekten Steuerberater für Ihre Bedürfnisse. 
-          Kostenlos, unverbindlich und TÜV-geprüft.
+          Starten Sie jetzt und finden Sie in wenigen Minuten den perfekten
+          Steuerberater für Ihre Bedürfnisse. Kostenlos, unverbindlich und
+          TÜV-geprüft.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <a 
-            href="/steuerberater-finden" 
+          <a
+            href="/steuerberater-finden"
             className="bg-white text-brand-blue px-8 py-4 rounded-lg font-semibold hover:bg-neutral-50 transition-colors inline-flex items-center gap-2 text-lg"
           >
             Jetzt kostenlos starten
@@ -25,7 +37,7 @@ export const MainCTASection = () => {
             <span>Oder rufen Sie uns an: 0800 123 456 789</span>
           </div>
         </div>
-        
+
         {/* Trust indicators */}
         <div className="flex flex-wrap justify-center items-center gap-8 mt-12 pt-8 border-t border-white/20">
           <div className="flex items-center gap-2 text-white/80">
@@ -56,19 +68,19 @@ export const EmergencyCTASection = () => {
             Steuerliche Probleme? Sofortige Hilfe verfügbar!
           </h2>
           <p className="text-lg mb-6 opacity-90">
-            Bei akuten steuerlichen Problemen vermitteln wir Ihnen innerhalb von 2 Stunden 
-            einen Steuerberater für Eilfälle.
+            Bei akuten steuerlichen Problemen vermitteln wir Ihnen innerhalb von
+            2 Stunden einen Steuerberater für Eilfälle.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="/eilberatung" 
+            <a
+              href="/eilberatung"
               className="bg-white text-error px-6 py-3 rounded-lg font-semibold hover:bg-neutral-50 transition-colors inline-flex items-center gap-2"
             >
               <Zap className="w-5 h-5" />
               Sofortberatung anfordern
             </a>
-            <a 
-              href="tel:08001234567" 
+            <a
+              href="tel:08001234567"
               className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-error transition-colors inline-flex items-center gap-2"
             >
               <Phone className="w-5 h-5" />
@@ -91,10 +103,11 @@ export const NewsletterCTASection = () => {
             Bleiben Sie steuerlich auf dem Laufenden
           </h2>
           <p className="text-lg text-neutral-600 mb-8">
-            Erhalten Sie wertvolle Steuertipps, Gesetzesänderungen und Expertenratschläge 
-            direkt in Ihr Postfach. Kostenlos und jederzeit kündbar.
+            Erhalten Sie wertvolle Steuertipps, Gesetzesänderungen und
+            Expertenratschläge direkt in Ihr Postfach. Kostenlos und jederzeit
+            kündbar.
           </p>
-          
+
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-neutral-200 max-w-2xl mx-auto">
             <form className="flex flex-col sm:flex-row gap-4">
               <input
@@ -125,23 +138,23 @@ export const TrustElements = () => {
     {
       icon: Shield,
       title: "TÜV geprüft",
-      description: "Geprüfte Qualität und Sicherheit"
+      description: "Geprüfte Qualität und Sicherheit",
     },
     {
       icon: Award,
       title: "Testsieger 2024",
-      description: "Beste Steuerberater-Plattform"
+      description: "Beste Steuerberater-Plattform",
     },
     {
       icon: Users,
       title: "10.000+ Kunden",
-      description: "Vertrauen uns bereits"
+      description: "Vertrauen uns bereits",
     },
     {
       icon: Star,
       title: "4.9/5 Sterne",
-      description: "Durchschnittsbewertung"
-    }
+      description: "Durchschnittsbewertung",
+    },
   ];
 
   return (
@@ -153,7 +166,9 @@ export const TrustElements = () => {
             <div className="w-16 h-16 bg-brand-blue bg-opacity-10 rounded-2xl flex items-center justify-center mx-auto mb-3">
               <IconComponent className="w-8 h-8 text-brand-blue" />
             </div>
-            <h3 className="font-semibold text-neutral-900 mb-1">{badge.title}</h3>
+            <h3 className="font-semibold text-neutral-900 mb-1">
+              {badge.title}
+            </h3>
             <p className="text-sm text-neutral-600">{badge.description}</p>
           </div>
         );
@@ -168,23 +183,23 @@ export const StatisticsSection = () => {
     {
       number: "10.000+",
       label: "Erfolgreiche Vermittlungen",
-      icon: Users
+      icon: Users,
     },
     {
       number: "1.500+",
       label: "Geprüfte Steuerberater",
-      icon: Award
+      icon: Award,
     },
     {
       number: "98%",
       label: "Kundenzufriedenheit",
-      icon: Star
+      icon: Star,
     },
     {
       number: "24h",
       label: "Ø Antwortzeit",
-      icon: Clock
-    }
+      icon: Clock,
+    },
   ];
 
   return (
@@ -195,10 +210,11 @@ export const StatisticsSection = () => {
             Zahlen, die für sich sprechen
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Diese Erfolgsgeschichte schreiben wir gemeinsam mit unseren Kunden und Partnern.
+            Diese Erfolgsgeschichte schreiben wir gemeinsam mit unseren Kunden
+            und Partnern.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => {
             const IconComponent = stat.icon;
@@ -207,7 +223,9 @@ export const StatisticsSection = () => {
                 <div className="w-20 h-20 flex items-center justify-center mx-auto mb-4">
                   <IconComponent className="w-10 h-10 icon-gradient" />
                 </div>
-                <div className="text-4xl font-bold text-neutral-900 mb-2">{stat.number}</div>
+                <div className="text-4xl font-bold text-neutral-900 mb-2">
+                  {stat.number}
+                </div>
                 <div className="text-neutral-600">{stat.label}</div>
               </div>
             );
@@ -228,32 +246,44 @@ export const ContactCTASection = () => {
             Haben Sie Fragen? Wir sind für Sie da!
           </h2>
           <p className="text-lg text-neutral-600 mb-8">
-            Unser Expertenteam steht Ihnen bei allen Fragen rund um die Steuerberater-Suche 
-            zur Verfügung. Kostenlos und unverbindlich.
+            Unser Expertenteam steht Ihnen bei allen Fragen rund um die
+            Steuerberater-Suche zur Verfügung. Kostenlos und unverbindlich.
           </p>
-          
+
           <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-            <a 
-              href="tel:08001234567" 
+            <a
+              href="tel:08001234567"
               className="bg-white border border-neutral-200 rounded-xl p-6 hover:shadow-lg transition-all group"
             >
               <Phone className="w-8 h-8 text-brand-blue mx-auto mb-3 group-hover:scale-110 transition-transform" />
-              <h3 className="font-semibold text-neutral-900 mb-2">Telefonische Beratung</h3>
-              <p className="text-neutral-600 text-sm mb-3">Sofortige Hilfe von unseren Experten</p>
-              <div className="text-brand-blue font-semibold">0800 123 456 789</div>
+              <h3 className="font-semibold text-neutral-900 mb-2">
+                Telefonische Beratung
+              </h3>
+              <p className="text-neutral-600 text-sm mb-3">
+                Sofortige Hilfe von unseren Experten
+              </p>
+              <div className="text-brand-blue font-semibold">
+                0800 123 456 789
+              </div>
             </a>
-            
-            <a 
-              href="mailto:info@meinsteuerberater.de" 
+
+            <a
+              href="mailto:info@meinsteuerberater.de"
               className="bg-white border border-neutral-200 rounded-xl p-6 hover:shadow-lg transition-all group"
             >
               <Mail className="w-8 h-8 text-brand-green mx-auto mb-3 group-hover:scale-110 transition-transform" />
-              <h3 className="font-semibold text-neutral-900 mb-2">E-Mail Support</h3>
-              <p className="text-neutral-600 text-sm mb-3">Antwort innerhalb von 2 Stunden</p>
-              <div className="text-brand-green font-semibold">info@meinsteuerberater.de</div>
+              <h3 className="font-semibold text-neutral-900 mb-2">
+                E-Mail Support
+              </h3>
+              <p className="text-neutral-600 text-sm mb-3">
+                Antwort innerhalb von 2 Stunden
+              </p>
+              <div className="text-brand-green font-semibold">
+                info@meinsteuerberater.de
+              </div>
             </a>
           </div>
-          
+
           <div className="mt-8 text-sm text-neutral-500">
             Montag bis Freitag: 8:00 - 18:00 Uhr | Samstag: 9:00 - 14:00 Uhr
           </div>
@@ -269,33 +299,37 @@ export const WhyChooseUsSection = () => {
     {
       icon: Check,
       title: "100% Kostenlos",
-      description: "Unsere Vermittlung ist für Sie völlig kostenfrei und unverbindlich."
+      description:
+        "Unsere Vermittlung ist für Sie völlig kostenfrei und unverbindlich.",
     },
     {
       icon: Shield,
       title: "Geprüfte Qualität",
-      description: "Alle Steuerberater durchlaufen einen strengen Auswahlprozess."
+      description:
+        "Alle Steuerberater durchlaufen einen strengen Auswahlprozess.",
     },
     {
       icon: Clock,
       title: "Schnelle Vermittlung",
-      description: "Meist erhalten Sie bereits binnen 24 Stunden passende Angebote."
+      description:
+        "Meist erhalten Sie bereits binnen 24 Stunden passende Angebote.",
     },
     {
       icon: Users,
       title: "Persönliche Betreuung",
-      description: "Unser Team unterstützt Sie bei der Auswahl des richtigen Beraters."
+      description:
+        "Unser Team unterstützt Sie bei der Auswahl des richtigen Beraters.",
     },
     {
       icon: Star,
       title: "Transparente Bewertungen",
-      description: "Echte Kundenbewertungen helfen bei Ihrer Entscheidung."
+      description: "Echte Kundenbewertungen helfen bei Ihrer Entscheidung.",
     },
     {
       icon: Award,
       title: "Mehrfach ausgezeichnet",
-      description: "Testsieger und TÜV-geprüfte Servicequalität."
-    }
+      description: "Testsieger und TÜV-geprüfte Servicequalität.",
+    },
   ];
 
   return (
@@ -306,11 +340,11 @@ export const WhyChooseUsSection = () => {
             Warum MeinSteuerberater.de?
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Als Deutschlands führende Steuerberater-Plattform bieten wir Ihnen einzigartige Vorteile 
-            für Ihre Beratersuche.
+            Als Deutschlands führende Steuerberater-Plattform bieten wir Ihnen
+            einzigartige Vorteile für Ihre Beratersuche.
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => {
             const IconComponent = benefit.icon;
@@ -319,8 +353,12 @@ export const WhyChooseUsSection = () => {
                 <div className="w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <IconComponent className="w-8 h-8 icon-gradient" />
                 </div>
-                <h3 className="text-xl font-semibold text-neutral-900 mb-3">{benefit.title}</h3>
-                <p className="text-neutral-600 leading-relaxed">{benefit.description}</p>
+                <h3 className="text-xl font-semibold text-neutral-900 mb-3">
+                  {benefit.title}
+                </h3>
+                <p className="text-neutral-600 leading-relaxed">
+                  {benefit.description}
+                </p>
               </div>
             );
           })}

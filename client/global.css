@@ -121,7 +121,8 @@
     --shadow-lg:
       0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
     --shadow-xl:
-      0 20px 25px -5px rgba(0, 0, 0, 0.06), 0 10px 10px -5px rgba(0, 0, 0, 0.015);
+      0 20px 25px -5px rgba(0, 0, 0, 0.06),
+      0 10px 10px -5px rgba(0, 0, 0, 0.015);
     --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
     --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.02);
     --shadow-focus: 0 0 0 3px rgba(5, 150, 105, 0.1);
@@ -233,8 +234,16 @@
     font-size: 16px;
     letter-spacing: 0.1px;
     background-image:
-      radial-gradient(circle at 25% 25%, rgba(16, 240, 227, 0.03) 0%, transparent 50%),
-      radial-gradient(circle at 75% 75%, rgba(0, 26, 248, 0.03) 0%, transparent 50%);
+      radial-gradient(
+        circle at 25% 25%,
+        rgba(16, 240, 227, 0.03) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 75% 75%,
+        rgba(0, 26, 248, 0.03) 0%,
+        transparent 50%
+      );
   }
 
   h1,
@@ -403,7 +412,7 @@
   }
 
   .card::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;

@@ -80,10 +80,7 @@ const HeroSection = () => {
                     />
                   </div>
                 </div>
-                <button
-                  type="submit"
-                  className="w-full btn-primary text-lg"
-                >
+                <button type="submit" className="w-full btn-primary text-lg">
                   {t("hero.search_button")}
                 </button>
               </form>
@@ -131,9 +128,7 @@ const HeroSection = () => {
                   <Check className="w-6 h-6 icon-gradient" />
                 </div>
                 <div>
-                  <p className="font-semibold text-slate-900">
-                    100% Kostenlos
-                  </p>
+                  <p className="font-semibold text-slate-900">100% Kostenlos</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">

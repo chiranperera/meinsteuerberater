@@ -1,5 +1,12 @@
-import { useState } from 'react';
-import { Star, Quote, ChevronLeft, ChevronRight, MapPin, Calendar } from 'lucide-react';
+import { useState } from "react";
+import {
+  Star,
+  Quote,
+  ChevronLeft,
+  ChevronRight,
+  MapPin,
+  Calendar,
+} from "lucide-react";
 
 const TestimonialsSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -15,7 +22,7 @@ const TestimonialsSection = () => {
       text: "Dank MeinSteuerberater.de habe ich innerhalb von 24 Stunden den perfekten Steuerberater für mein Unternehmen gefunden. Die Beratung war hervorragend und hat mir viel Zeit und Geld gespart. Absolut empfehlenswert!",
       service: "Unternehmensteuer",
       avatar: "M",
-      verified: true
+      verified: true,
     },
     {
       id: 2,
@@ -27,7 +34,7 @@ const TestimonialsSection = () => {
       text: "Als Freiberuflerin war ich unsicher bei meiner Steuererklärung. Der vermittelte Steuerberater hat mir nicht nur geholfen, sondern auch wertvolle Tipps für die Zukunft gegeben. Der Service ist kostenlos und absolut professionell!",
       service: "Steuererklärung",
       avatar: "S",
-      verified: true
+      verified: true,
     },
     {
       id: 3,
@@ -39,7 +46,7 @@ const TestimonialsSection = () => {
       text: "Die Gründungsberatung war genau das, was ich brauchte. Kompetent, schnell und unkompliziert. Mein Steuerberater begleitet mich auch weiterhin und ich bin sehr zufrieden mit der Zusammenarbeit.",
       service: "Gründungsberatung",
       avatar: "T",
-      verified: true
+      verified: true,
     },
     {
       id: 4,
@@ -51,8 +58,8 @@ const TestimonialsSection = () => {
       text: "Endlich eine Plattform, die hält was sie verspricht! Schnelle Vermittlung, transparente Preise und einen Steuerberater, der wirklich versteht, was ich brauche. Ich kann es nur weiterempfehlen.",
       service: "Jahresabschluss",
       avatar: "J",
-      verified: true
-    }
+      verified: true,
+    },
   ];
 
   const nextSlide = () => {
@@ -60,7 +67,9 @@ const TestimonialsSection = () => {
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+    setCurrentSlide(
+      (prev) => (prev - 1 + testimonials.length) % testimonials.length,
+    );
   };
 
   const renderStars = (rating: number) => {
@@ -68,9 +77,9 @@ const TestimonialsSection = () => {
       <Star
         key={index}
         className={`w-5 h-5 ${
-          index < rating 
-            ? 'fill-brand-yellow text-brand-yellow' 
-            : 'text-neutral-300'
+          index < rating
+            ? "fill-brand-yellow text-brand-yellow"
+            : "text-neutral-300"
         }`}
       />
     ));
@@ -85,24 +94,24 @@ const TestimonialsSection = () => {
             Das sagen unsere zufriedenen Kunden
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Über 10.000 Kunden haben bereits ihren perfekten Steuerberater über unsere Plattform gefunden. 
-            Lesen Sie hier ihre Erfahrungen.
+            Über 10.000 Kunden haben bereits ihren perfekten Steuerberater über
+            unsere Plattform gefunden. Lesen Sie hier ihre Erfahrungen.
           </p>
-          
+
           {/* Overall Rating */}
           <div className="flex items-center justify-center gap-4 mt-8">
-            <div className="flex items-center gap-1">
-              {renderStars(5)}
-            </div>
+            <div className="flex items-center gap-1">{renderStars(5)}</div>
             <div className="text-lg font-semibold text-neutral-900">4.9/5</div>
-            <div className="text-neutral-600">basierend auf 2,847 Bewertungen</div>
+            <div className="text-neutral-600">
+              basierend auf 2,847 Bewertungen
+            </div>
           </div>
         </div>
 
         {/* Testimonials Slider */}
         <div className="relative">
           <div className="overflow-hidden rounded-2xl">
-            <div 
+            <div
               className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
@@ -111,7 +120,7 @@ const TestimonialsSection = () => {
                   <div className="bg-white rounded-2xl p-8 mx-4 shadow-lg border border-neutral-200 relative">
                     {/* Quote Icon */}
                     <Quote className="absolute top-6 right-6 w-8 h-8 text-brand-green opacity-20" />
-                    
+
                     <div className="grid lg:grid-cols-3 gap-8 items-center">
                       {/* Customer Info */}
                       <div className="text-center lg:text-left">
@@ -120,7 +129,7 @@ const TestimonialsSection = () => {
                           <div className="w-16 h-16 bg-gradient-cta rounded-full flex items-center justify-center text-white text-xl font-semibold">
                             {testimonial.avatar}
                           </div>
-                          
+
                           {/* Customer Details */}
                           <div>
                             <h4 className="text-lg font-semibold text-neutral-900 flex items-center gap-2">
@@ -131,7 +140,9 @@ const TestimonialsSection = () => {
                                 </div>
                               )}
                             </h4>
-                            <p className="text-neutral-600">{testimonial.occupation}</p>
+                            <p className="text-neutral-600">
+                              {testimonial.occupation}
+                            </p>
                             <div className="flex items-center gap-1 text-neutral-500 text-sm mt-1">
                               <MapPin className="w-4 h-4" />
                               <span>{testimonial.location}</span>
@@ -192,7 +203,7 @@ const TestimonialsSection = () => {
               key={index}
               onClick={() => setCurrentSlide(index)}
               className={`w-3 h-3 rounded-full transition-colors ${
-                index === currentSlide ? 'bg-brand-blue' : 'bg-neutral-300'
+                index === currentSlide ? "bg-brand-blue" : "bg-neutral-300"
               }`}
             />
           ))}
@@ -204,14 +215,20 @@ const TestimonialsSection = () => {
             <div className="w-16 h-16 flex items-center justify-center mx-auto mb-4">
               <Star className="w-8 h-8 icon-gradient" />
             </div>
-            <div className="text-2xl font-bold text-neutral-900 mb-2">4.9/5</div>
-            <div className="text-sm text-neutral-600">Durchschnittsbewertung</div>
+            <div className="text-2xl font-bold text-neutral-900 mb-2">
+              4.9/5
+            </div>
+            <div className="text-sm text-neutral-600">
+              Durchschnittsbewertung
+            </div>
           </div>
           <div className="text-center">
             <div className="w-16 h-16 flex items-center justify-center mx-auto mb-4">
               <Quote className="w-8 h-8 icon-gradient" />
             </div>
-            <div className="text-2xl font-bold text-neutral-900 mb-2">2.847</div>
+            <div className="text-2xl font-bold text-neutral-900 mb-2">
+              2.847
+            </div>
             <div className="text-sm text-neutral-600">Kundenbewertungen</div>
           </div>
           <div className="text-center">
@@ -219,7 +236,9 @@ const TestimonialsSection = () => {
               <span className="font-bold text-xl icon-gradient">98%</span>
             </div>
             <div className="text-2xl font-bold text-neutral-900 mb-2">98%</div>
-            <div className="text-sm text-neutral-600">Weiterempfehlungsrate</div>
+            <div className="text-sm text-neutral-600">
+              Weiterempfehlungsrate
+            </div>
           </div>
           <div className="text-center">
             <div className="w-16 h-16 flex items-center justify-center mx-auto mb-4">
