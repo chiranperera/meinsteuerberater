@@ -28,7 +28,7 @@ const HeroSection = () => {
           {/* Left Column - Content */}
           <div className="space-y-10">
             {/* Trust Badge */}
-            <div className="inline-flex items-center gap-3 bg-neutral-50 px-4 py-2 rounded-full border border-neutral-200">
+            <div className="inline-flex items-center gap-3 bg-slate-50 px-4 py-2 rounded-full border border-slate-200">
               <div className="flex items-center gap-1">
                 {[...Array(5)].map((_, i) => (
                   <Star
@@ -37,60 +37,60 @@ const HeroSection = () => {
                   />
                 ))}
               </div>
-              <span className="text-neutral-700 text-sm font-medium">
+              <span className="text-slate-700 text-sm font-medium">
                 4.9/5 • <strong>2,847 {t("hero.reviews")}</strong>
               </span>
             </div>
 
             {/* Main Headline */}
             <div className="space-y-6">
-              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-extrabold text-neutral-900 leading-[1.1] tracking-tight">
+              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-slate-900 leading-[1.1] tracking-tight">
                 {t("hero.title")}{" "}
                 <span className="text-brand-blue">
                   {t("hero.title_highlight")}
                 </span>
               </h1>
-              <p className="text-xl lg:text-2xl text-neutral-600 leading-relaxed font-light max-w-2xl">
+              <p className="text-xl lg:text-2xl text-slate-600 leading-relaxed font-normal max-w-2xl">
                 {t("hero.subtitle")}
               </p>
             </div>
 
             {/* Search Form */}
-            <div className="bg-white rounded-3xl shadow-sm p-8 border border-neutral-200/80">
+            <div className="bg-white rounded-2xl shadow-sm p-8 border border-slate-200/60">
               <form onSubmit={handleSearch} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="relative">
-                    <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-neutral-400 w-5 h-5" />
+                    <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-slate-400 w-5 h-5" />
                     <input
                       type="text"
                       placeholder={t("hero.search_placeholder")}
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
-                      className="w-full pl-12 pr-4 py-4 border border-neutral-200 rounded-2xl text-base focus:ring-2 focus:ring-brand-blue/20 focus:border-brand-blue transition-all bg-neutral-50/50 hover:bg-white hover:border-neutral-300"
+                      className="w-full pl-12 pr-4 py-4 border border-slate-200 rounded-xl text-base focus:ring-2 focus:ring-brand-blue/10 focus:border-brand-blue transition-all bg-slate-50/50 hover:bg-white hover:border-slate-300"
                     />
                   </div>
                   <div className="relative">
-                    <MapPin className="absolute left-4 top-1/2 transform -translate-y-1/2 text-neutral-400 w-5 h-5" />
+                    <MapPin className="absolute left-4 top-1/2 transform -translate-y-1/2 text-slate-400 w-5 h-5" />
                     <input
                       type="text"
                       placeholder={t("hero.location_placeholder")}
                       value={location}
                       onChange={(e) => setLocation(e.target.value)}
-                      className="w-full pl-12 pr-4 py-4 border border-neutral-200 rounded-2xl text-base focus:ring-2 focus:ring-brand-blue/20 focus:border-brand-blue transition-all bg-neutral-50/50 hover:bg-white hover:border-neutral-300"
+                      className="w-full pl-12 pr-4 py-4 border border-slate-200 rounded-xl text-base focus:ring-2 focus:ring-brand-blue/10 focus:border-brand-blue transition-all bg-slate-50/50 hover:bg-white hover:border-slate-300"
                     />
                   </div>
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-gradient-cta text-white font-medium py-4 px-8 rounded-2xl hover:shadow-md hover:scale-[1.02] transform transition-all duration-200 text-lg"
+                  className="w-full bg-gradient-cta text-white font-medium py-4 px-8 rounded-xl hover:shadow-md transform transition-all duration-200 text-lg"
                 >
                   {t("hero.search_button")}
                 </button>
               </form>
 
               {/* Popular Searches */}
-              <div className="mt-6 pt-6 border-t border-neutral-100">
-                <p className="text-sm text-neutral-500 mb-3 font-medium">
+              <div className="mt-6 pt-6 border-t border-slate-100">
+                <p className="text-sm text-slate-500 mb-3 font-medium">
                   {t("hero.popular_searches")}
                 </p>
                 <div className="flex flex-wrap gap-2">
