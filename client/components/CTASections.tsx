@@ -317,7 +317,7 @@ export const WhyChooseUsSection = () => {
             return (
               <div key={index} className="text-center">
                 <div className="w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <IconComponent className="w-8 h-8" style={{background: 'linear-gradient(135deg, #10f0e3 0%, #001af8 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'}} />
+                  <IconComponent className="w-8 h-8 icon-gradient" />
                 </div>
                 <h3 className="text-xl font-semibold text-neutral-900 mb-3">{benefit.title}</h3>
                 <p className="text-neutral-600 leading-relaxed">{benefit.description}</p>
