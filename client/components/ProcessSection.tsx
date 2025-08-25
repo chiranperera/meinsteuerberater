@@ -111,9 +111,9 @@ const ProcessSection = () => {
             <p className="text-neutral-600 mb-6">
               Starten Sie jetzt und erhalten Sie in wenigen Minuten passende Angebote von qualifizierten Steuerberatern.
             </p>
-            <a 
-              href="#search-form" 
-              className="btn-primary inline-flex items-center gap-2 text-lg px-8 py-4"
+            <a
+              href="#search-form"
+              className="btn-primary inline-flex items-center gap-2"
             >
               Jetzt kostenlos starten
               <ArrowRight className="w-5 h-5" />
