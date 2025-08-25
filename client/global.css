@@ -476,4 +476,13 @@
     display: grid;
     gap: var(--space-6);
   }
+
+  /* Icon Gradient Class */
+  .icon-gradient {
+    background: linear-gradient(135deg, #10f0e3 0%, #001af8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
 }
