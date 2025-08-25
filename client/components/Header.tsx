@@ -116,18 +116,10 @@ const Header = () => {
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
             <div className="flex items-center">
-              <a href="/" className="flex items-center gap-3 group">
-                <div className="w-12 h-12 bg-gradient-cta rounded-xl flex items-center justify-center shadow-sm group-hover:shadow-md transition-all">
-                  <span className="text-white font-bold text-xl">M</span>
-                </div>
-                <div className="hidden sm:block">
-                  <span className="text-2xl font-bold text-brand-blue tracking-tight">
-                    MeinSteuerberater
-                  </span>
-                  <span className="text-sm text-slate-500 block font-medium">
-                    .de
-                  </span>
-                </div>
+              <a href="/" className="group">
+                <span className="text-2xl font-bold text-slate-900 tracking-tight hover:text-brand-blue transition-colors">
+                  MeinSteuerberater<span className="text-slate-500">.de</span>
+                </span>
               </a>
             </div>
 
