@@ -189,15 +189,15 @@ const HeroSection = () => {
           </div>
 
           {/* Right Column - Hero Image/Visual */}
-          <div className="relative lg:pl-12">
+          <div className="relative lg:pl-0">
             <div className="relative">
               {/* Professional Business Image */}
-              <div className="min-h-[500px] md:min-h-[600px] lg:min-h-[700px] bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl border border-slate-200/50 overflow-hidden relative shadow-sm">
+              <div className="min-h-[500px] md:min-h-[600px] lg:min-h-[700px] bg-white overflow-hidden relative">
                 {/* Background Image */}
                 <div
                   className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                   style={{
-                    backgroundImage: `linear-gradient(135deg, rgba(27, 94, 155, 0.75) 0%, rgba(93, 183, 69, 0.65) 100%), url('https://images.pexels.com/photos/7821546/pexels-photo-7821546.jpeg?auto=compress&cs=tinysrgb&w=1200')`,
+                    backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fb6a2def9d1b24188a9a9c876266a2852%2F27511d7389ce4b8698c493b260f2558c?format=webp&width=800')`,
                   }}
                 />
               </div>
