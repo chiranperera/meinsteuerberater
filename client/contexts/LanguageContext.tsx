@@ -152,6 +152,10 @@ const translations = {
     'hero.trust_quality': 'TÜV certified quality',
     'hero.professional_tax_consulting': 'Professional Tax Consulting',
     'hero.platform_trust': 'Trust Germany\'s leading tax advisor platform',
+    'hero.customer_satisfaction': '98% Customer Satisfaction',
+    'hero.verified_reviews': 'Verified Reviews',
+    'hero.avg_response': 'Avg 2.3 hours',
+    'hero.response_time': 'Response Time',
     
     // Process Section
     'process.title': 'Find the perfect tax advisor in 3 steps',
