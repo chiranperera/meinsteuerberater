@@ -62,6 +62,8 @@ const translations = {
     'hero.usp_verified_desc': 'Nur qualifizierte Berater',
     'hero.trust_placements': 'Über 10.000 erfolgreiche Vermittlungen',
     'hero.trust_quality': 'TÜV geprüfte Qualität',
+    'hero.professional_tax_consulting': 'Professionelle Steuerberatung',
+    'hero.platform_trust': 'Vertrauen Sie auf Deutschlands führende Steuerberater-Plattform',
     
     // Process Section
     'process.title': 'In 3 Schritten zum perfekten Steuerberater',
