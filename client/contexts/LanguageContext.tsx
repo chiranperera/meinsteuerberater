@@ -146,6 +146,8 @@ const translations = {
     'hero.usp_verified_desc': 'Only qualified advisors',
     'hero.trust_placements': 'Over 10,000 successful placements',
     'hero.trust_quality': 'TÜV certified quality',
+    'hero.professional_tax_consulting': 'Professional Tax Consulting',
+    'hero.platform_trust': 'Trust Germany\'s leading tax advisor platform',
     
     // Process Section
     'process.title': 'Find the perfect tax advisor in 3 steps',
