@@ -2,26 +2,28 @@ import { Search, Users, Handshake, ArrowRight } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const ProcessSection = () => {
+  const { t } = useLanguage();
+
   const steps = [
     {
       number: 1,
       icon: Search,
-      title: "Anfrage stellen",
-      description: "Beschreiben Sie Ihr Anliegen und geben Sie Ihren Standort an. Unsere intelligente Suche findet passende Steuerberater in Ihrer Nähe.",
+      title: t('process.step1_title'),
+      description: t('process.step1_desc'),
       features: ["Kostenlos & unverbindlich", "Nur wenige Minuten", "Präzise Filterung"]
     },
     {
       number: 2,
       icon: Users,
-      title: "Angebote vergleichen",
-      description: "Erhalten Sie maßgeschneiderte Angebote von qualifizierten Steuerberatern. Vergleichen Sie Leistungen, Preise und Bewertungen.",
+      title: t('process.step2_title'),
+      description: t('process.step2_desc'),
       features: ["Bis zu 5 Angebote", "Transparente Preise", "Echte Bewertungen"]
     },
     {
       number: 3,
       icon: Handshake,
-      title: "Berater wählen",
-      description: "Entscheiden Sie sich für den Steuerberater, der am besten zu Ihnen passt. Beginnen Sie direkt mit der professionellen Beratung.",
+      title: t('process.step3_title'),
+      description: t('process.step3_desc'),
       features: ["Freie Auswahl", "Direkter Kontakt", "Sofortiger Start"]
     }
   ];
