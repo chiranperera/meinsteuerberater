@@ -82,7 +82,7 @@ const HeroSection = () => {
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-gradient-cta text-white font-medium py-4 px-8 rounded-xl hover:shadow-md transform transition-all duration-200 text-lg"
+                  className="w-full btn-primary text-lg"
                 >
                   {t("hero.search_button")}
                 </button>
