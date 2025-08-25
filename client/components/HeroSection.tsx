@@ -154,20 +154,6 @@ const HeroSection = () => {
                   }}
                 />
 
-                {/* Content Overlay */}
-                <div className="relative z-10 w-full h-full flex items-center justify-center p-8">
-                  <div className="text-center text-white">
-                    <div className="w-24 h-24 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-6 border border-white/30">
-                      <Users className="w-12 h-12 text-white" />
-                    </div>
-                    <h3 className="text-2xl font-bold text-white mb-4 drop-shadow-lg">
-                      {t('hero.professional_tax_consulting') || 'Professionelle Steuerberatung'}
-                    </h3>
-                    <p className="text-white/90 text-lg drop-shadow-md max-w-xs mx-auto">
-                      {t('hero.platform_trust') || 'Vertrauen Sie auf Deutschlands führende Steuerberater-Plattform'}
-                    </p>
-                  </div>
-                </div>
               </div>
 
               {/* Floating Cards */}
