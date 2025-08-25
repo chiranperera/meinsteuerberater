@@ -157,7 +157,7 @@ export default {
         "3xl": "1.5rem",
       },
       fontFamily: {
-        sans: ["Inter", "Plus Jakarta Sans", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"],
+        sans: ["DM Sans", "Inter", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"],
         mono: ["Roboto Mono", "Courier New", "monospace"],
       },
       fontSize: {
