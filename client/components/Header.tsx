@@ -105,17 +105,17 @@ const Header = () => {
                   onClick={() => toggleDropdown('services')}
                   className="flex items-center gap-1 text-neutral-700 hover:text-brand-blue font-medium transition-colors"
                 >
-                  Leistungen
+                  {t('header.services')}
                   <ChevronDown className="w-4 h-4" />
                 </button>
                 {activeDropdown === 'services' && (
                   <div className="absolute top-full left-0 mt-2 w-64 bg-white shadow-2xl rounded-lg border border-neutral-200 py-4 px-6">
                     <div className="space-y-3">
-                      <a href="/steuerberatung" className="block text-neutral-700 hover:text-brand-blue">Steuerberatung</a>
-                      <a href="/buchhaltung" className="block text-neutral-700 hover:text-brand-blue">Buchhaltung</a>
-                      <a href="/jahresabschluss" className="block text-neutral-700 hover:text-brand-blue">Jahresabschluss</a>
-                      <a href="/gruendungsberatung" className="block text-neutral-700 hover:text-brand-blue">Gründungsberatung</a>
-                      <a href="/unternehmensteuer" className="block text-neutral-700 hover:text-brand-blue">Unternehmensteuer</a>
+                      <a href="/steuerberatung" className="block text-neutral-700 hover:text-brand-blue">{t('services.tax_consulting')}</a>
+                      <a href="/buchhaltung" className="block text-neutral-700 hover:text-brand-blue">{t('services.bookkeeping')}</a>
+                      <a href="/jahresabschluss" className="block text-neutral-700 hover:text-brand-blue">{t('services.annual_statement')}</a>
+                      <a href="/gruendungsberatung" className="block text-neutral-700 hover:text-brand-blue">{t('services.startup_consulting')}</a>
+                      <a href="/unternehmensteuer" className="block text-neutral-700 hover:text-brand-blue">{t('services.corporate_tax')}</a>
                     </div>
                   </div>
                 )}
@@ -126,31 +126,31 @@ const Header = () => {
                   onClick={() => toggleDropdown('locations')}
                   className="flex items-center gap-1 text-neutral-700 hover:text-brand-blue font-medium transition-colors"
                 >
-                  Standorte
+                  {t('header.locations')}
                   <ChevronDown className="w-4 h-4" />
                 </button>
                 {activeDropdown === 'locations' && (
                   <div className="absolute top-full left-0 mt-2 w-56 bg-white shadow-2xl rounded-lg border border-neutral-200 py-4 px-6">
                     <div className="grid grid-cols-2 gap-3">
-                      <a href="/berlin" className="block text-neutral-700 hover:text-brand-blue">Berlin</a>
-                      <a href="/muenchen" className="block text-neutral-700 hover:text-brand-blue">München</a>
-                      <a href="/hamburg" className="block text-neutral-700 hover:text-brand-blue">Hamburg</a>
-                      <a href="/koeln" className="block text-neutral-700 hover:text-brand-blue">Köln</a>
-                      <a href="/frankfurt" className="block text-neutral-700 hover:text-brand-blue">Frankfurt</a>
-                      <a href="/stuttgart" className="block text-neutral-700 hover:text-brand-blue">Stuttgart</a>
+                      <a href="/berlin" className="block text-neutral-700 hover:text-brand-blue">{t('locations.berlin')}</a>
+                      <a href="/muenchen" className="block text-neutral-700 hover:text-brand-blue">{t('locations.munich')}</a>
+                      <a href="/hamburg" className="block text-neutral-700 hover:text-brand-blue">{t('locations.hamburg')}</a>
+                      <a href="/koeln" className="block text-neutral-700 hover:text-brand-blue">{t('locations.cologne')}</a>
+                      <a href="/frankfurt" className="block text-neutral-700 hover:text-brand-blue">{t('locations.frankfurt')}</a>
+                      <a href="/stuttgart" className="block text-neutral-700 hover:text-brand-blue">{t('locations.stuttgart')}</a>
                     </div>
                   </div>
                 )}
               </div>
 
               <a href="/preise" className="text-neutral-700 hover:text-brand-blue font-medium transition-colors">
-                Preise
+                {t('header.prices')}
               </a>
               <a href="/blog" className="text-neutral-700 hover:text-brand-blue font-medium transition-colors">
-                Ratgeber
+                {t('header.guide')}
               </a>
               <a href="/kontakt" className="text-neutral-700 hover:text-brand-blue font-medium transition-colors">
-                Kontakt
+                {t('header.contact')}
               </a>
             </div>
 
