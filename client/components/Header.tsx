@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { Menu, X, Phone, Mail, MapPin, ChevronDown } from 'lucide-react';
+import { Menu, X, Phone, Mail, MapPin, ChevronDown, Globe } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
