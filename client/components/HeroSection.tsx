@@ -5,6 +5,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 const HeroSection = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [location, setLocation] = useState('');
+  const { t } = useLanguage();
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
