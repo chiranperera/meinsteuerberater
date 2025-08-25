@@ -14,17 +14,17 @@
     --secondary-orange: #FF6B35;
     --secondary-yellow: #FFB700;
 
-    /* Neutral Colors */
-    --neutral-900: #1A1A1A;
-    --neutral-800: #2D2D2D;
-    --neutral-700: #404040;
-    --neutral-600: #595959;
-    --neutral-500: #737373;
-    --neutral-400: #A6A6A6;
-    --neutral-300: #D9D9D9;
-    --neutral-200: #E6E6E6;
-    --neutral-100: #F5F5F5;
-    --neutral-50: #FAFAFA;
+    /* Neutral Colors - More refined palette */
+    --neutral-900: #0F172A;
+    --neutral-800: #1E293B;
+    --neutral-700: #334155;
+    --neutral-600: #64748B;
+    --neutral-500: #94A3B8;
+    --neutral-400: #CBD5E1;
+    --neutral-300: #E2E8F0;
+    --neutral-200: #F1F5F9;
+    --neutral-100: #F8FAFC;
+    --neutral-50: #FBFCFD;
     --white: #FFFFFF;
 
     /* Semantic Colors */
@@ -101,15 +101,15 @@
     --space-24: 6rem;        /* 96px */
     --space-32: 8rem;        /* 128px */
 
-    /* Shadows */
-    --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
-    --shadow-focus: 0 0 0 3px rgba(91, 183, 69, 0.3);
+    /* Shadows - More subtle and refined */
+    --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.02);
+    --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.09), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+    --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.03);
+    --shadow-focus: 0 0 0 3px rgba(91, 183, 69, 0.15);
 
     /* Border Radius */
     --radius-none: 0;
@@ -161,11 +161,11 @@
     --padding-card: var(--space-6);
     --padding-section: var(--space-16) var(--space-4);
 
-    /* Section Spacing */
-    --section-gap-sm: var(--space-12);
-    --section-gap-md: var(--space-16);
-    --section-gap-lg: var(--space-20);
-    --section-gap-xl: var(--space-32);
+    /* Section Spacing - More generous spacing */
+    --section-gap-sm: var(--space-16);
+    --section-gap-md: var(--space-24);
+    --section-gap-lg: var(--space-32);
+    --section-gap-xl: 10rem;
 
     /* Legacy Shadcn Variables (HSL format) */
     --background: 0 0% 100%;
@@ -210,11 +210,13 @@
 
   body {
     font-family: var(--font-primary);
-    background-color: var(--white);
+    background-color: var(--neutral-50);
     color: var(--neutral-900);
     line-height: var(--leading-normal);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    letter-spacing: -0.01em;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -293,15 +295,15 @@
     outline-offset: 2px;
   }
 
-  /* Button Components */
+  /* Button Components - More refined styling */
   .btn-primary {
     background: var(--gradient-cta);
     color: var(--white);
-    padding: var(--padding-md);
-    border-radius: var(--radius-lg);
-    font-weight: var(--font-semibold);
+    padding: var(--space-4) var(--space-8);
+    border-radius: var(--radius-xl);
+    font-weight: var(--font-medium);
     font-size: var(--text-base);
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-sm);
     transition: var(--transition-base);
     border: none;
     display: inline-flex;
@@ -309,12 +311,14 @@
     justify-content: center;
     gap: var(--space-2);
     text-decoration: none;
-    min-height: 44px; /* Touch target size */
+    min-height: 48px;
+    letter-spacing: -0.01em;
   }
 
   .btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+    filter: brightness(1.05);
   }
 
   .btn-primary:focus {
@@ -348,19 +352,20 @@
     outline-offset: 2px;
   }
 
-  /* Card Components */
+  /* Card Components - More refined and minimal */
   .card {
     background: var(--white);
-    border-radius: var(--radius-xl);
-    box-shadow: var(--shadow-md);
-    padding: var(--padding-card);
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-sm);
+    padding: var(--space-8);
     transition: var(--transition-base);
     border: 1px solid var(--neutral-200);
   }
 
   .card:hover {
-    box-shadow: var(--shadow-xl);
-    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+    border-color: var(--neutral-300);
   }
 
   /* Form Components */
