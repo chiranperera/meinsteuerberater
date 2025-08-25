@@ -1,4 +1,5 @@
 import { Search, Users, Handshake, ArrowRight } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const ProcessSection = () => {
   const steps = [
