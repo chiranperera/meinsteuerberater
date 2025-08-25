@@ -39,7 +39,7 @@ const Header = () => {
       className="sticky top-0 z-50 bg-white/98 backdrop-blur-md border-b border-slate-200/60 shadow-sm"
     >
       {/* Top Bar for Consultants */}
-      <div className="bg-slate-50 border-b border-slate-200 text-slate-700 py-3">
+      <div className="hidden md:block bg-slate-50 border-b border-slate-200 text-slate-700 py-2">
         <div className="container-custom">
           <div className="flex flex-col sm:flex-row justify-between items-center text-sm">
             <div className="flex items-center gap-6 mb-2 sm:mb-0">
@@ -113,7 +113,7 @@ const Header = () => {
       {/* Main Navigation */}
       <nav className="bg-white/98 backdrop-blur-md">
         <div className="container-custom">
-          <div className="flex justify-between items-center py-6">
+          <div className="flex justify-between items-center py-4">
             {/* Logo */}
             <div className="flex items-center">
               <a href="/" className="flex items-center gap-3 group">
