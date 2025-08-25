@@ -10,6 +10,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import AccessibilityWrapper from "./components/AccessibilityWrapper";
 import PlaceholderPage from "./components/PlaceholderPage";
+import { LanguageProvider } from "./contexts/LanguageContext";
 
 const queryClient = new QueryClient();
 
