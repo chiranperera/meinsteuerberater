@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Search, MapPin, Check, Star, Users, Shield, Clock } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const HeroSection = () => {
   const [searchQuery, setSearchQuery] = useState('');
