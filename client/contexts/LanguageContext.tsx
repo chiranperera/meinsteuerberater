@@ -64,6 +64,10 @@ const translations = {
     'hero.trust_quality': 'TÜV geprüfte Qualität',
     'hero.professional_tax_consulting': 'Professionelle Steuerberatung',
     'hero.platform_trust': 'Vertrauen Sie auf Deutschlands führende Steuerberater-Plattform',
+    'hero.customer_satisfaction': '98% Kundenzufriedenheit',
+    'hero.verified_reviews': 'Verifizierte Bewertungen',
+    'hero.avg_response': 'Ø 2,3 Stunden',
+    'hero.response_time': 'Antwortzeit',
     
     // Process Section
     'process.title': 'In 3 Schritten zum perfekten Steuerberater',
