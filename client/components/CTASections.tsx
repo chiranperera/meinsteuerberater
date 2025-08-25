@@ -205,7 +205,7 @@ export const StatisticsSection = () => {
             return (
               <div key={index} className="text-center">
                 <div className="w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                  <IconComponent className="w-10 h-10" style={{background: 'linear-gradient(135deg, #10f0e3 0%, #001af8 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'}} />
+                  <IconComponent className="w-10 h-10 icon-gradient" />
                 </div>
                 <div className="text-4xl font-bold text-neutral-900 mb-2">{stat.number}</div>
                 <div className="text-neutral-600">{stat.label}</div>
