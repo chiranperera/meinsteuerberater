@@ -104,8 +104,8 @@ const HeroSection = () => {
                   <Check className="w-5 h-5 text-brand-green" />
                 </div>
                 <div>
-                  <p className="font-semibold text-neutral-900">100% Kostenlos</p>
-                  <p className="text-sm text-neutral-600">Unverbindliche Beratung</p>
+                  <p className="font-semibold text-neutral-900">{t('hero.usp_free')}</p>
+                  <p className="text-sm text-neutral-600">{t('hero.usp_free_desc')}</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -113,8 +113,8 @@ const HeroSection = () => {
                   <Clock className="w-5 h-5 text-brand-green" />
                 </div>
                 <div>
-                  <p className="font-semibold text-neutral-900">Schnelle Vermittlung</p>
-                  <p className="text-sm text-neutral-600">Meist binnen 24h</p>
+                  <p className="font-semibold text-neutral-900">{t('hero.usp_fast')}</p>
+                  <p className="text-sm text-neutral-600">{t('hero.usp_fast_desc')}</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -122,8 +122,8 @@ const HeroSection = () => {
                   <Shield className="w-5 h-5 text-brand-green" />
                 </div>
                 <div>
-                  <p className="font-semibold text-neutral-900">Geprüfte Experten</p>
-                  <p className="text-sm text-neutral-600">Nur qualifizierte Berater</p>
+                  <p className="font-semibold text-neutral-900">{t('hero.usp_verified')}</p>
+                  <p className="text-sm text-neutral-600">{t('hero.usp_verified_desc')}</p>
                 </div>
               </div>
             </div>
