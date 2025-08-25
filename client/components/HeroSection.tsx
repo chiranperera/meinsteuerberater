@@ -144,19 +144,27 @@ const HeroSection = () => {
           {/* Right Column - Hero Image/Visual */}
           <div className="relative lg:pl-8">
             <div className="relative">
-              {/* Hero Image Placeholder - In a real implementation, use actual image */}
-              <div className="aspect-[4/3] bg-gradient-to-br from-brand-blue/10 to-brand-green/10 rounded-2xl border border-neutral-200 overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center">
-                  {/* Placeholder for hero image */}
-                  <div className="text-center p-8">
-                    <div className="w-24 h-24 bg-gradient-cta rounded-full flex items-center justify-center mx-auto mb-4">
+              {/* Professional Business Image */}
+              <div className="min-h-[600px] lg:min-h-[650px] bg-gradient-to-br from-brand-blue/10 to-brand-green/10 rounded-2xl border border-neutral-200 overflow-hidden relative">
+                {/* Background Image */}
+                <div
+                  className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                  style={{
+                    backgroundImage: `linear-gradient(135deg, rgba(27, 94, 155, 0.85) 0%, rgba(93, 183, 69, 0.75) 100%), url('https://images.pexels.com/photos/7821546/pexels-photo-7821546.jpeg?auto=compress&cs=tinysrgb&w=1200')`
+                  }}
+                />
+
+                {/* Content Overlay */}
+                <div className="relative z-10 w-full h-full flex items-center justify-center p-8">
+                  <div className="text-center text-white">
+                    <div className="w-24 h-24 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-6 border border-white/30">
                       <Users className="w-12 h-12 text-white" />
                     </div>
-                    <h3 className="text-xl font-semibold text-neutral-800 mb-2">
-                      Professionelle Steuerberatung
+                    <h3 className="text-2xl font-bold text-white mb-4 drop-shadow-lg">
+                      {t('hero.professional_tax_consulting') || 'Professionelle Steuerberatung'}
                     </h3>
-                    <p className="text-neutral-600">
-                      Vertrauen Sie auf Deutschlands führende Steuerberater-Plattform
+                    <p className="text-white/90 text-lg drop-shadow-md max-w-xs mx-auto">
+                      {t('hero.platform_trust') || 'Vertrauen Sie auf Deutschlands führende Steuerberater-Plattform'}
                     </p>
                   </div>
                 </div>
