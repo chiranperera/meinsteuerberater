@@ -46,7 +46,7 @@ const HeroSection = () => {
             <div className="space-y-6">
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-slate-900 leading-[1.05] tracking-wide">
                 {t("hero.title")}{" "}
-                <span className="text-brand-blue">
+                <span style={{background: 'linear-gradient(135deg, #10f0e3 0%, #001af8 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'}}>
                   {t("hero.title_highlight")}
                 </span>
               </h1>
