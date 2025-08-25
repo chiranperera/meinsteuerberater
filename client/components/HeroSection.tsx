@@ -114,7 +114,7 @@ const HeroSection = () => {
                   ].map((term) => (
                     <button
                       key={term.key}
-                      className="px-4 py-2 bg-neutral-50 text-neutral-700 rounded-full text-sm hover:bg-neutral-100 transition-all hover:scale-105 border border-neutral-200 font-medium"
+                      className="px-4 py-2 bg-slate-50 text-slate-700 rounded-full text-sm hover:bg-slate-100 transition-all border border-slate-200 font-medium"
                       onClick={() => setSearchQuery(term.value)}
                     >
                       {term.value}
@@ -131,10 +131,10 @@ const HeroSection = () => {
                   <Check className="w-5 h-5 text-brand-green" />
                 </div>
                 <div>
-                  <p className="font-semibold text-neutral-900 mb-1">
+                  <p className="font-semibold text-slate-900 mb-1">
                     {t("hero.usp_free")}
                   </p>
-                  <p className="text-sm text-neutral-600 leading-relaxed">
+                  <p className="text-sm text-slate-600 leading-relaxed">
                     {t("hero.usp_free_desc")}
                   </p>
                 </div>
@@ -144,10 +144,10 @@ const HeroSection = () => {
                   <Clock className="w-5 h-5 text-brand-green" />
                 </div>
                 <div>
-                  <p className="font-semibold text-neutral-900 mb-1">
+                  <p className="font-semibold text-slate-900 mb-1">
                     {t("hero.usp_fast")}
                   </p>
-                  <p className="text-sm text-neutral-600 leading-relaxed">
+                  <p className="text-sm text-slate-600 leading-relaxed">
                     {t("hero.usp_fast_desc")}
                   </p>
                 </div>
@@ -157,10 +157,10 @@ const HeroSection = () => {
                   <Shield className="w-5 h-5 text-brand-green" />
                 </div>
                 <div>
-                  <p className="font-semibold text-neutral-900 mb-1">
+                  <p className="font-semibold text-slate-900 mb-1">
                     {t("hero.usp_verified")}
                   </p>
-                  <p className="text-sm text-neutral-600 leading-relaxed">
+                  <p className="text-sm text-slate-600 leading-relaxed">
                     {t("hero.usp_verified_desc")}
                   </p>
                 </div>
@@ -169,7 +169,7 @@ const HeroSection = () => {
 
             {/* Trust Signals */}
             <div className="flex flex-wrap items-center gap-8 pt-6">
-              <div className="flex items-center gap-3 text-neutral-600">
+              <div className="flex items-center gap-3 text-slate-600">
                 <div className="w-8 h-8 bg-brand-blue/10 rounded-full flex items-center justify-center">
                   <Users className="w-4 h-4 text-brand-blue" />
                 </div>
@@ -177,7 +177,7 @@ const HeroSection = () => {
                   {t("hero.trust_placements")}
                 </span>
               </div>
-              <div className="flex items-center gap-3 text-neutral-600">
+              <div className="flex items-center gap-3 text-slate-600">
                 <div className="w-8 h-8 bg-brand-blue/10 rounded-full flex items-center justify-center">
                   <Shield className="w-4 h-4 text-brand-blue" />
                 </div>
@@ -192,7 +192,7 @@ const HeroSection = () => {
           <div className="relative lg:pl-12">
             <div className="relative">
               {/* Professional Business Image */}
-              <div className="min-h-[500px] md:min-h-[600px] lg:min-h-[700px] bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-3xl border border-neutral-200/50 overflow-hidden relative shadow-sm">
+              <div className="min-h-[500px] md:min-h-[600px] lg:min-h-[700px] bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl border border-slate-200/50 overflow-hidden relative shadow-sm">
                 {/* Background Image */}
                 <div
                   className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -203,32 +203,32 @@ const HeroSection = () => {
               </div>
 
               {/* Floating Cards */}
-              <div className="absolute top-8 -right-6 bg-white/95 backdrop-blur-md rounded-2xl shadow-sm p-5 border border-white/30">
+              <div className="absolute top-8 -right-6 bg-white/97 backdrop-blur-md rounded-xl shadow-sm p-5 border border-white/40">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gradient-to-br from-brand-green to-brand-green/80 rounded-xl flex items-center justify-center shadow-sm">
+                  <div className="w-10 h-10 bg-gradient-to-br from-brand-green to-brand-green/80 rounded-lg flex items-center justify-center shadow-sm">
                     <Check className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-neutral-900">
+                    <p className="text-sm font-semibold text-slate-900">
                       {t("hero.customer_satisfaction")}
                     </p>
-                    <p className="text-xs text-neutral-600 font-medium">
+                    <p className="text-xs text-slate-600 font-medium">
                       {t("hero.verified_reviews")}
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="absolute bottom-8 -left-6 bg-white/95 backdrop-blur-md rounded-2xl shadow-sm p-5 border border-white/30">
+              <div className="absolute bottom-8 -left-6 bg-white/97 backdrop-blur-md rounded-xl shadow-sm p-5 border border-white/40">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gradient-to-br from-brand-blue to-brand-blue/80 rounded-xl flex items-center justify-center shadow-sm">
+                  <div className="w-10 h-10 bg-gradient-to-br from-brand-blue to-brand-blue/80 rounded-lg flex items-center justify-center shadow-sm">
                     <Clock className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-neutral-900">
+                    <p className="text-sm font-semibold text-slate-900">
                       {t("hero.avg_response")}
                     </p>
-                    <p className="text-xs text-neutral-600 font-medium">
+                    <p className="text-xs text-slate-600 font-medium">
                       {t("hero.response_time")}
                     </p>
                   </div>
