@@ -39,17 +39,17 @@ const Header = () => {
       className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-neutral-100"
     >
       {/* Top Bar for Consultants */}
-      <div className="bg-gradient-to-r from-neutral-900 to-neutral-800 text-white py-3">
+      <div className="bg-slate-50 border-b border-slate-200 text-slate-700 py-3">
         <div className="container-custom">
           <div className="flex flex-col sm:flex-row justify-between items-center text-sm">
             <div className="flex items-center gap-6 mb-2 sm:mb-0">
               <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-neutral-300" />
-                <span className="text-neutral-200">{t("header.phone")}</span>
+                <Phone className="w-4 h-4 text-slate-500" />
+                <span className="text-slate-600 text-sm">{t("header.phone")}</span>
               </div>
               <div className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-neutral-300" />
-                <span className="text-neutral-200">{t("header.email")}</span>
+                <Mail className="w-4 h-4 text-slate-500" />
+                <span className="text-slate-600 text-sm">{t("header.email")}</span>
               </div>
             </div>
             <div className="flex items-center gap-6">
@@ -57,7 +57,7 @@ const Header = () => {
               <div className="relative">
                 <button
                   onClick={() => toggleDropdown("language")}
-                  className="flex items-center gap-1 text-neutral-200 hover:text-white transition-colors"
+                  className="flex items-center gap-1 text-slate-600 hover:text-slate-900 transition-colors"
                 >
                   <Globe className="w-4 h-4" />
                   <span className="text-sm font-medium">
@@ -96,12 +96,12 @@ const Header = () => {
                   </div>
                 )}
               </div>
-              <span className="text-sm text-neutral-300">
+              <span className="text-sm text-slate-500">
                 {t("header.become_consultant")}
               </span>
               <a
                 href="/steuerberater-werden"
-                className="bg-brand-green hover:bg-brand-green/90 px-4 py-2 rounded-lg text-sm font-medium transition-all hover:scale-105"
+                className="bg-brand-green hover:bg-brand-green/90 px-4 py-2 rounded-lg text-sm font-medium transition-all text-white"
               >
                 {t("header.register_now")}
               </a>
