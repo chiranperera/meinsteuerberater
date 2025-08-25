@@ -247,7 +247,7 @@ const Header = () => {
             <div className="hidden lg:block">
               <a
                 href="/steuerberater-finden"
-                className="bg-gradient-cta text-white px-6 py-3 rounded-2xl font-medium transition-all hover:shadow-md hover:scale-105"
+                className="btn-primary"
               >
                 {t("header.find_consultant")}
               </a>
