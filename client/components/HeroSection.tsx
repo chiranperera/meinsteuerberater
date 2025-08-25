@@ -27,19 +27,18 @@ const HeroSection = () => {
                 ))}
               </div>
               <span className="text-neutral-600">
-                4.9/5 basierend auf <strong>2,847 Bewertungen</strong>
+                4.9/5 {t('hero.rating_text')} <strong>2,847 {t('hero.reviews')}</strong>
               </span>
             </div>
 
             {/* Main Headline */}
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-neutral-900 leading-tight">
-                Steuerberater gesucht?{' '}
-                <span className="text-brand-blue">Wir haben die Lösung!</span>
+                {t('hero.title')}{' '}
+                <span className="text-brand-blue">{t('hero.title_highlight')}</span>
               </h1>
               <p className="text-lg lg:text-xl text-neutral-600 leading-relaxed">
-                Finden Sie in nur 3 Schritten den perfekten Steuerberater in Ihrer Nähe. 
-                Kostenlos, unverbindlich und schnell.
+                {t('hero.subtitle')}
               </p>
             </div>
 
