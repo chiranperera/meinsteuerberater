@@ -31,7 +31,7 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-sm">
+    <header ref={headerRef} className="sticky top-0 z-50 bg-white shadow-sm">
       {/* Top Bar for Consultants */}
       <div className="bg-brand-blue text-white py-2">
         <div className="container-custom">
