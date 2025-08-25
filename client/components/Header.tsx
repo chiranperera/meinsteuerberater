@@ -24,20 +24,57 @@ const Header = () => {
             <div className="flex items-center gap-4 mb-2 sm:mb-0">
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                <span>0800 123 456 789</span>
+                <span>{t('header.phone')}</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <span>info@meinsteuerberater.de</span>
+                <span>{t('header.email')}</span>
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <span className="text-sm">Steuerberater werden?</span>
-              <a 
-                href="/steuerberater-werden" 
+              {/* Language Toggle */}
+              <div className="relative">
+                <button
+                  onClick={() => toggleDropdown('language')}
+                  className="flex items-center gap-1 text-white hover:text-brand-yellow transition-colors"
+                >
+                  <Globe className="w-4 h-4" />
+                  <span className="text-sm">{t(`language.${language === 'de' ? 'german' : 'english'}`)}</span>
+                  <ChevronDown className="w-3 h-3" />
+                </button>
+                {activeDropdown === 'language' && (
+                  <div className="absolute top-full right-0 mt-2 w-36 bg-white shadow-lg rounded-lg border border-neutral-200 py-2 z-50">
+                    <button
+                      onClick={() => {
+                        setLanguage('de');
+                        setActiveDropdown(null);
+                      }}
+                      className={`block w-full text-left px-4 py-2 text-sm hover:bg-neutral-50 transition-colors ${
+                        language === 'de' ? 'text-brand-blue font-medium' : 'text-neutral-700'
+                      }`}
+                    >
+                      🇩🇪 {t('language.german')}
+                    </button>
+                    <button
+                      onClick={() => {
+                        setLanguage('en');
+                        setActiveDropdown(null);
+                      }}
+                      className={`block w-full text-left px-4 py-2 text-sm hover:bg-neutral-50 transition-colors ${
+                        language === 'en' ? 'text-brand-blue font-medium' : 'text-neutral-700'
+                      }`}
+                    >
+                      🇺🇸 {t('language.english')}
+                    </button>
+                  </div>
+                )}
+              </div>
+              <span className="text-sm">{t('header.become_consultant')}</span>
+              <a
+                href="/steuerberater-werden"
                 className="bg-brand-green hover:bg-brand-green-600 px-4 py-1 rounded text-sm font-medium transition-colors"
               >
-                Jetzt anmelden
+                {t('header.register_now')}
               </a>
             </div>
           </div>
