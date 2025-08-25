@@ -34,11 +34,10 @@ const ProcessSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-neutral-900 mb-4">
-            In 3 Schritten zum perfekten Steuerberater
+            {t('process.title')}
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Unser bewährter Prozess macht es Ihnen leicht, den idealen Steuerberater für Ihre Bedürfnisse zu finden. 
-            Schnell, einfach und völlig kostenlos.
+            {t('process.subtitle')}
           </p>
         </div>
 
