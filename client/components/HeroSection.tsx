@@ -171,7 +171,7 @@ const HeroSection = () => {
               </div>
 
               {/* Floating Cards */}
-              <div className="absolute -top-4 -right-4 bg-white rounded-lg shadow-lg p-4 border border-neutral-200">
+              <div className="absolute top-6 -right-4 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg p-4 border border-white/20">
                 <div className="flex items-center gap-2">
                   <div className="w-8 h-8 bg-brand-green rounded-full flex items-center justify-center">
                     <Check className="w-4 h-4 text-white" />
@@ -183,7 +183,7 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              <div className="absolute -bottom-4 -left-4 bg-white rounded-lg shadow-lg p-4 border border-neutral-200">
+              <div className="absolute bottom-6 -left-4 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg p-4 border border-white/20">
                 <div className="flex items-center gap-2">
                   <div className="w-8 h-8 bg-brand-blue rounded-full flex items-center justify-center">
                     <Clock className="w-4 h-4 text-white" />
