@@ -225,13 +225,16 @@
 
   body {
     font-family: var(--font-primary);
-    background-color: #ffffff; /* Clean white background */
-    color: var(--neutral-900);
+    background-color: #ffffff;
+    color: #1e293b;
     line-height: var(--leading-normal);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 16px;
-    letter-spacing: -0.005em; /* Less aggressive letter spacing */
+    letter-spacing: 0.1px;
+    background-image:
+      radial-gradient(circle at 25% 25%, rgba(16, 240, 227, 0.03) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, rgba(0, 26, 248, 0.03) 0%, transparent 50%);
   }
 
   h1,
@@ -240,9 +243,10 @@
   h4,
   h5,
   h6 {
-    font-weight: var(--font-semibold);
+    font-weight: 700;
     line-height: var(--leading-tight);
-    color: var(--neutral-900);
+    color: #0f172a;
+    letter-spacing: 0.2px;
   }
 
   h1 {
@@ -385,20 +389,38 @@
     outline-offset: 2px;
   }
 
-  /* Card Components - Clean and minimal */
+  /* Card Components - Modern and prestigious */
   .card {
-    background: var(--white);
-    border-radius: 16px; /* Less rounded for professional look */
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.03);
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px 0 rgba(16, 240, 227, 0.1);
     padding: 32px;
-    transition: all 0.2s ease;
-    border: 1px solid #f1f5f9;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(16, 240, 227, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--gradient-cta);
+    opacity: 0;
+    transition: opacity 0.3s ease;
   }
 
   .card:hover {
-    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.08);
-    transform: translateY(-1px);
-    border-color: #e2e8f0;
+    box-shadow: 0 8px 24px 0 rgba(16, 240, 227, 0.2);
+    transform: translateY(-4px);
+    border-color: rgba(16, 240, 227, 0.3);
+  }
+
+  .card:hover::before {
+    opacity: 1;
   }
 
   /* Form Components - Clean and professional */
