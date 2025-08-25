@@ -44,19 +44,19 @@ const HeroSection = () => {
 
             {/* Main Headline */}
             <div className="space-y-6">
-              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-slate-900 leading-[1.1] tracking-tight">
+              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-slate-900 leading-[1.05] tracking-wide">
                 {t("hero.title")}{" "}
                 <span className="text-brand-blue">
                   {t("hero.title_highlight")}
                 </span>
               </h1>
-              <p className="text-xl lg:text-2xl text-slate-600 leading-relaxed font-normal max-w-2xl">
+              <p className="text-xl lg:text-2xl text-slate-600 leading-relaxed font-light max-w-2xl">
                 {t("hero.subtitle")}
               </p>
             </div>
 
             {/* Search Form */}
-            <div className="bg-white rounded-2xl shadow-sm p-8 border border-slate-200/60">
+            <div className="bg-white rounded shadow-lg p-8 border border-slate-100/80 relative overflow-hidden">
               <form onSubmit={handleSearch} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="relative">
