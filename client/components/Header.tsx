@@ -157,7 +157,7 @@ const Header = () => {
             {/* CTA Button */}
             <div className="hidden lg:block">
               <a href="/steuerberater-finden" className="btn-primary">
-                Steuerberater finden
+                {t('header.find_consultant')}
               </a>
             </div>
 
