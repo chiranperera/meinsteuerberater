@@ -23,7 +23,7 @@ const HeroSection = () => {
   return (
     <section className="relative overflow-hidden bg-white pb-12 lg:pb-16 lg:pt-0">
       <div className="relative">
-        <div className="container-custom relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-1 gap-16 lg:gap-20 items-center">
             {/* Left Column - Content */}
             <div className="space-y-10 lg:w-1/2 lg:pr-20">
@@ -222,46 +222,47 @@ const HeroSection = () => {
             </div>
           </div>
           
-          {/* Absolute positioned right side image for large screens - extends to screen edge */}
-          <div className="hidden lg:block fixed top-0 right-0 w-1/2 h-screen z-0">
-            <div className="relative h-full">
-              <div
-                className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                style={{
-                  backgroundImage: `url('/images/hero-banner-2.jpeg')`,
-                  backgroundPosition: 'center center',
-                }}
-              />
-              
-              <div className="absolute top-80 right-8 bg-white/97 backdrop-blur-md rounded-xl shadow-sm p-5 border border-white/40">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gradient-to-br from-brand-green to-brand-green/80 rounded-lg flex items-center justify-center shadow-sm">
-                    <Check className="w-5 h-5 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-sm font-semibold text-slate-900">
-                      {t("hero.customer_satisfaction")}
-                    </p>
-                    <p className="text-xs text-slate-600 font-medium">
-                      {t("hero.verified_reviews")}
-                    </p>
-                  </div>
+        </div>
+        
+        {/* Right side image extending to viewport edge */}
+        <div className="hidden lg:block absolute top-0 right-0 w-1/2 h-full">
+          <div className="relative h-full">
+            <div
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+              style={{
+                backgroundImage: `url('/images/hero-banner-2.jpeg')`,
+                backgroundPosition: 'center center',
+              }}
+            />
+            
+            <div className="absolute top-80 right-8 bg-white/97 backdrop-blur-md rounded-xl shadow-sm p-5 border border-white/40">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-gradient-to-br from-brand-green to-brand-green/80 rounded-lg flex items-center justify-center shadow-sm">
+                  <Check className="w-5 h-5 text-white" />
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-slate-900">
+                    {t("hero.customer_satisfaction")}
+                  </p>
+                  <p className="text-xs text-slate-600 font-medium">
+                    {t("hero.verified_reviews")}
+                  </p>
                 </div>
               </div>
+            </div>
 
-              <div className="absolute bottom-20 left-8 bg-white/97 backdrop-blur-md rounded-xl shadow-sm p-5 border border-white/40">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gradient-to-br from-brand-blue to-brand-blue/80 rounded-lg flex items-center justify-center shadow-sm">
-                    <Clock className="w-5 h-5 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-sm font-semibold text-slate-900">
-                      {t("hero.avg_response")}
-                    </p>
-                    <p className="text-xs text-slate-600 font-medium">
-                      {t("hero.response_time")}
-                    </p>
-                  </div>
+            <div className="absolute bottom-20 left-8 bg-white/97 backdrop-blur-md rounded-xl shadow-sm p-5 border border-white/40">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-gradient-to-br from-brand-blue to-brand-blue/80 rounded-lg flex items-center justify-center shadow-sm">
+                  <Clock className="w-5 h-5 text-white" />
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-slate-900">
+                    {t("hero.avg_response")}
+                  </p>
+                  <p className="text-xs text-slate-600 font-medium">
+                    {t("hero.response_time")}
+                  </p>
                 </div>
               </div>
             </div>
