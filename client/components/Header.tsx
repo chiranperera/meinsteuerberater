@@ -105,7 +105,10 @@ const Header = () => {
               </span>
               <a
                 href="/steuerberater-werden"
-                className="bg-brand-cyan hover:bg-brand-cyan/90 px-4 py-2 rounded-lg text-sm font-medium transition-all text-white shadow-sm hover:shadow-md"
+                className="bg-transparent border-[3px] border-transparent px-4 py-2 rounded text-sm font-medium transition-all text-brand-blue hover:text-[#001af8] shadow-sm hover:shadow-md"
+                style={{
+                  borderImage: 'linear-gradient(135deg, #10f0e3 0%, #001af8 100%) 1',
+                }}
               >
                 {t("header.register_now")}
               </a>
