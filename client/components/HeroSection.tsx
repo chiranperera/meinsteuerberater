@@ -181,7 +181,8 @@ const HeroSection = () => {
                   <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                     style={{
-                      backgroundImage: `url('/images/hero-banner.jpg')`,
+                      backgroundImage: `url('/images/hero-banner-2.jpeg')`,
+                      backgroundPosition: 'center center',
                     }}
                   />
                 </div>
@@ -221,13 +222,14 @@ const HeroSection = () => {
             </div>
           </div>
           
-          {/* Absolute positioned right side image for large screens */}
-          <div className="hidden lg:block absolute top-0 right-0 w-1/2 h-full">
+          {/* Absolute positioned right side image for large screens - extends to screen edge */}
+          <div className="hidden lg:block fixed top-0 right-0 w-1/2 h-screen z-0">
             <div className="relative h-full">
               <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                 style={{
-                  backgroundImage: `url('/images/hero-banner.jpg')`,
+                  backgroundImage: `url('/images/hero-banner-2.jpeg')`,
+                  backgroundPosition: 'center center',
                 }}
               />
               
