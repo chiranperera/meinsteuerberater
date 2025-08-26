@@ -186,10 +186,10 @@ const Footer = () => {
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-neutral-800 rounded-2xl flex items-center justify-center mx-auto mb-3">
-                <span className="text-brand-blue font-bold text-sm">TEST</span>
+                <span className="text-[#10dde4] hover:text-white font-bold text-sm transition-colors">TEST</span>
               </div>
               <div className="text-2xl font-bold mb-1">1,2</div>
-              <div className="text-sm text-neutral-400">Stiftung Warentest</div>
+              <div className="text-sm text-[#10dde4] hover:text-white transition-colors">Stiftung Warentest</div>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-neutral-800 rounded-2xl flex items-center justify-center mx-auto mb-3">
@@ -229,31 +229,31 @@ const Footer = () => {
               <span className="text-neutral-400 text-sm mr-2">Folgen Sie uns:</span>
               <a 
                 href="https://facebook.com/meinsteuerberater" 
-                className="w-8 h-8 bg-neutral-800 rounded-lg flex items-center justify-center hover:bg-neutral-700 hover:text-white transition-colors"
+                className="w-8 h-8 bg-neutral-800 rounded-lg flex items-center justify-center hover:bg-neutral-700 transition-colors"
                 aria-label="Facebook"
               >
-                <Facebook className="w-4 h-4" />
+                <Facebook className="w-4 h-4 text-[#10dde4] hover:text-white" />
               </a>
               <a 
                 href="https://twitter.com/meinsteuerberater" 
-                className="w-8 h-8 bg-neutral-800 rounded-lg flex items-center justify-center hover:bg-neutral-700 hover:text-white transition-colors"
+                className="w-8 h-8 bg-neutral-800 rounded-lg flex items-center justify-center hover:bg-neutral-700 transition-colors"
                 aria-label="Twitter"
               >
-                <Twitter className="w-4 h-4" />
+                <Twitter className="w-4 h-4 text-[#10dde4] hover:text-white" />
               </a>
               <a
                 href="https://linkedin.com/company/meinsteuerberater"
-                className="w-8 h-8 bg-neutral-800 rounded-lg flex items-center justify-center hover:bg-neutral-700 hover:text-white transition-colors"
+                className="w-8 h-8 bg-neutral-800 rounded-lg flex items-center justify-center hover:bg-neutral-700 transition-colors"
                 aria-label="LinkedIn"
               >
-                <Linkedin className="w-4 h-4" />
+                <Linkedin className="w-4 h-4 text-[#10dde4] hover:text-white" />
               </a>
               <a 
                 href="https://youtube.com/meinsteuerberater" 
-                className="w-8 h-8 bg-neutral-800 rounded-lg flex items-center justify-center hover:bg-neutral-700 hover:text-white transition-colors"
+                className="w-8 h-8 bg-neutral-800 rounded-lg flex items-center justify-center hover:bg-neutral-700 transition-colors"
                 aria-label="YouTube"
               >
-                <Youtube className="w-4 h-4" />
+                <Youtube className="w-4 h-4 text-[#10dde4] hover:text-white" />
               </a>
             </div>
           </div>
