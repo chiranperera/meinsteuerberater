@@ -105,7 +105,7 @@ const Header = () => {
               </span>
               <a
                 href="/steuerberater-werden"
-                className="bg-brand-green hover:bg-brand-green/90 px-4 py-2 rounded-lg text-sm font-medium transition-all text-white shadow-sm hover:shadow-md"
+                className="bg-brand-cyan hover:bg-brand-cyan/90 px-4 py-2 rounded-lg text-sm font-medium transition-all text-white shadow-sm hover:shadow-md"
               >
                 {t("header.register_now")}
               </a>
